@@ -1,0 +1,22 @@
+{
+    "space_id": "9aab223f23d011e4984e068c804282c1",
+    "space_features": "E",
+    "number_guests": 99,
+    "space_name": "Testspaaaaaace",
+    "neighborhood": "SOMA, SanFrancisco",
+    "latitude": "14.12",
+    "longitude": "15.151",
+    "space_usages": [
+        "Event"
+    ],
+    "pricing": {
+        "hourly_rate": 10000,
+        "min_hours": 3
+    },
+    "space_amenities": [
+        "KitchenFacilities",
+        "Whiteboard",
+        "Chairs"
+    ],
+    "host_ssoid": "6499f41c0d0511e4966206f116f37bf8"
+}

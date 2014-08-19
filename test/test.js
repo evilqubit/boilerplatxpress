@@ -1,33 +1,28 @@
 var request = require('request');
-
-var space1 = {
-    name: 'chalex',
-    private: false,
-    meta: {
-        rooms: 3,
-        desks: 6
-    }
-};
-
-var space2 = {
-    name: 'Besha',
-    private: false,
-    meta: {
-        rooms: 1,
-        desks: 2
-    }
-};
-
-var space3 = {
-    name: 'Sanctuary',
-    private: true,
-    meta: {
-        rooms: 8,
-        desks: 19
-    }
-};
-
 var host = 'http://localhost:3000/';
+
+var test_space2 = {
+    "space_features": "E2",
+    "number_guests": 99123,
+    "space_name": "test123123",
+    "neighborhood": "SOMA,asd SanFrancisco",
+    "latitude": "14.122",
+    "longitude": "15.1521",
+    "space_usages": [
+        "Eventasd"
+    ],
+    "pricing": {
+        "hourly_rate": 10000,
+        "min_hours": 3
+    },
+    "space_amenities": [
+        "KitchenFacilities",
+        "Whiteboard",
+        "Chairs"
+    ],
+    "host_ssoid": "6499f41c0d0511e4966206f116f37bf8asdasdasd"
+};
+
 
 var addSpace = function(space, callback){
     request.post(host+'api/spaces', function(err, resp, body){
@@ -85,7 +80,7 @@ addSpace(space3,function(data){
     });
 });
 */
-for(var i=0; i< 10000; i++){
+/*for(var i=0; i< 10000; i++){
     var iSpace = {
         name: 'chalex'+i,
         private: false,
@@ -98,3 +93,7 @@ for(var i=0; i< 10000; i++){
 
     });
 }
+*/
+addSpace(test_space2,function(data){
+        getAll();
+});

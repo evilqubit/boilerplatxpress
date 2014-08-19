@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
-
+var fs = require('fs');
+var path = require('path');
+var publicSpaces = path.resolve(__dirname + "/../" + "public/spaces/");
 var Space = mongoose.model('Space');
 
 exports.create = function(req, res){
@@ -27,13 +29,33 @@ exports.readAll = function(req, res){
     });
 }
 
+renderSpace = function(res, spaces){
+    res.render('space',spaces,function(err, html){
+        if (err) console.log(err);
+        var spacePath = publicSpaces + "/" + spaces.space._id +'.html';
+        fs.exists(spacePath,function(exists){
+            if(exists){
+                    console.log("Space sent from cache");
+                    return res.sendfile(spacePath);
+            }
+            else {
+                fs.writeFile(spacePath, html, function (err) {
+                    if (err) return console.log(err);
+                    else return res.sendfile(spacePath);
+                });
+            }
+        })
+    });
+}
+
 exports.singleRead = function(req, res){
   var id = req.param('id');
   Space.findById(id, function(err, space){
       if(err) console.log(err);
       else{
           console.log("Read Space with id: \'" + id + "\'");
-          return res.send(space);
+          //return res.send(space);
+          renderSpace(res,{space:space});
       }
   })
 };
@@ -41,9 +63,17 @@ exports.singleRead = function(req, res){
 exports.update = function(req, res){
     var id = req.param('id');
     Space.findById(id, function(err, space){
-        space.name = req.body.name;
-        space.private = req.body.private;
-        space.meta = req.body.meta;
+        space.space_name = req.body.space_name;
+        space.space_features = req.body.space_features;
+        space.neighborhood = req.body.neighborhood;
+        space.number_guests = req.body.number_guests;
+        space.latitude = req.body.latitude;
+        space.longitude = req.body.longitude;
+        space.space_usages = req.body.space_usages;
+        space.pricing.hourly_rate = req.body.pricing.hourly_rate;
+        space.pricing.min_hours = req.body.pricing.min_hours;
+        space.space_amenities = req.body.space_amenities;
+        space.host_ssoid = req.body.host_ssoid;
         space.save(function(err){
             if(err) console.log(err);
             else
@@ -68,7 +98,7 @@ exports.search = function(req, res){
     var skip = req.query.skip || 0;
     var limit = req.query.limit || 200;
     var regex = new RegExp(req.query.q, 'i');
-    return Space.find({name: regex},null,{ skip: skip, limit: limit }, function(err,q){
+    return Space.find({space_name: regex},null,{ skip: skip, limit: limit }, function(err,q){
         return res.send(q);
     });
 }

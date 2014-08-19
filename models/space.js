@@ -3,13 +3,20 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var spaceSchema = new Schema({
-  name:  {type: String, unique: true, lowercase: true},
-  date: { type: Date, default: Date.now },
-  private: Boolean,
-  meta: {
-    rooms: Number,
-    desks:  Number
-  }
+  space_name:  {type: String, unique: true, lowercase: true,index: true},
+  space_features:  {type: String, uppercase: true},
+  neighborhood: String,
+  number_guests: Number,
+  latitude: String,
+  longitude: String,
+  space_usages: [String],
+  pricing: {
+    hourly_rate: Number,
+    min_hours:  Number
+  },
+  space_amenities:[String],
+  host_ssoid: String,
+  c_date: { type: Date, default: Date.now }
 });
 
 var Space = mongoose.model('Space', spaceSchema);

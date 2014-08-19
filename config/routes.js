@@ -10,4 +10,5 @@ module.exports = function(app){
     app.get('/api/spaces/:id',spaces.singleRead);
     app.put('/api/spaces/:id', spaces.update);
     app.delete('/api/spaces/:id',spaces.delete);
+
 }
