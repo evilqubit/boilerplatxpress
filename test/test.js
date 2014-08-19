@@ -1,29 +1,6 @@
 var request = require('request');
 var host = 'http://localhost:3000/';
 
-var test_space2 = {
-    "space_features": "E2",
-    "number_guests": 99123,
-    "space_name": "test123123",
-    "neighborhood": "SOMA,asd SanFrancisco",
-    "latitude": "14.122",
-    "longitude": "15.1521",
-    "space_usages": [
-        "Eventasd"
-    ],
-    "pricing": {
-        "hourly_rate": 10000,
-        "min_hours": 3
-    },
-    "space_amenities": [
-        "KitchenFacilities",
-        "Whiteboard",
-        "Chairs"
-    ],
-    "host_ssoid": "6499f41c0d0511e4966206f116f37bf8asdasdasd"
-};
-
-
 var addSpace = function(space, callback){
     request.post(host+'api/spaces', function(err, resp, body){
         if (!err && resp.statusCode == 200){
@@ -80,20 +57,36 @@ addSpace(space3,function(data){
     });
 });
 */
-/*for(var i=0; i< 10000; i++){
-    var iSpace = {
-        name: 'chalex'+i,
-        private: false,
-        meta: {
-            rooms: i,
-            desks: 6
-        }
-    }
-    addSpace(iSpace,function(data){
 
+for(var i=0; i< 10000; i++){
+    var test_space = {
+        "space_features": "E2",
+        "number_guests": 100,
+        "space_name": "foobar"+i,
+        "neighborhood": "SOMA,asd SanFrancisco",
+        "latitude": "14.122",
+        "longitude": "15.1521",
+        "space_usages": [
+            "Eventasd"
+        ],
+        "pricing": {
+            "hourly_rate": 10000,
+            "min_hours": 3
+        },
+        "space_amenities": [
+            "KitchenFacilities",
+            "Whiteboard",
+            "Chairs"
+        ],
+        "host_ssoid": "6499f41c0d0511e4966206f116f37bf8asdasdasd"
+    }
+
+    addSpace(test_space,function(data){
+        
     });
 }
-*/
-addSpace(test_space2,function(data){
+
+
+/*addSpace(test_space1,function(data){
         getAll();
-});
+});*/
