@@ -2,7 +2,7 @@ var request = require('request');
 var host = 'http://localhost:3000/';
 
 var addSpace = function(space, callback){
-    request.post(host+'api/spaces', function(err, resp, body){
+    request.post(host+'api/v1/spaces', function(err, resp, body){
         if (!err && resp.statusCode == 200){
             body = JSON.parse(body);
             console.log("Adding new space with id: " + body._id);
@@ -14,14 +14,14 @@ var addSpace = function(space, callback){
 }
 
 var getAll = function(){
-    request.get(host+'api/spaces/', function(err, resp, body){
+    request.get(host+'api/v1/spaces/', function(err, resp, body){
         console.log("List All Spaces:");
         console.log(JSON.parse(body));
     });
 }
 
 function updateSingle(id, space, callback){
-    request.put(host+'api/spaces/'+id, function(err, resp, body){
+    request.put(host+'api/v1/spaces/'+id, function(err, resp, body){
         if (!err && resp.statusCode == 200) {
             body = JSON.parse(body);
             console.log("PUT: update Space with id:" +id);
@@ -31,7 +31,7 @@ function updateSingle(id, space, callback){
 }
 
 function delSingle(id, callback){
-    request.del(host+'api/spaces/'+id, function(err, resp, body){
+    request.del(host+'api/v1/spaces/'+id, function(err, resp, body){
         if(!err && resp.statusCode == 200) {
             console.log("DEL: space with id: " + id);
             return callback(body);
@@ -82,7 +82,7 @@ for(var i=0; i< 10000; i++){
     }
 
     addSpace(test_space,function(data){
-        
+
     });
 }
 
