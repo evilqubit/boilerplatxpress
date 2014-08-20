@@ -5,6 +5,7 @@ var publicSpaces = path.resolve(__dirname + "/../" + "public/spaces/");
 var Space = mongoose.model('Space');
 
 exports.create = function(req, res){
+
     var space = new Space(req.body);
 
     space.save(function(err){
@@ -32,7 +33,8 @@ exports.readAll = function(req, res){
 renderSpace = function(res, spaces){
     res.render('space',spaces,function(err, html){
         if (err) console.log(err);
-        var spacePath = publicSpaces + "/" + spaces.space._id +'.html';
+        var id = spaces.space._id;
+        var spacePath = publicSpaces + "/" + id +'.html';
         fs.exists(spacePath,function(exists){
             if(exists){
                     console.log("Space sent from cache");
@@ -50,12 +52,12 @@ renderSpace = function(res, spaces){
 
 exports.singleRead = function(req, res){
   var id = req.param('id');
-  Space.findById(id, function(err, space){
+  Space.find({_id:id}, function(err, space){
       if(err) console.log(err);
       else{
           console.log("Read Space with id: \'" + id + "\'");
-          //return res.send(space);
-          renderSpace(res,{space:space});
+          //return res.send(space[0]._id);
+          return renderSpace(res,{space:space[0]});
       }
   })
 };
