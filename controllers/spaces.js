@@ -20,7 +20,6 @@ exports.create = function(req, res){
 exports.readAll = function(req, res){
     var skip = req.query.skip || 0;
     var limit = req.query.limit || 200;
-    console.log(skip + " " + limit);
     Space.find(null,null,{ skip: skip, limit: limit },function(err, spaces){
         if(err) console.log(err);
         else{
@@ -56,8 +55,9 @@ exports.singleRead = function(req, res){
       if(err) console.log(err);
       else{
           console.log("Read Space with id: \'" + id + "\'");
-          //return res.send(space[0]._id);
-          return renderSpace(res,{space:space[0]});
+          if(typeof space[0] !== 'undefined')
+              return renderSpace(res,{space:space[0]});
+          else return res.send("Can't find id");
       }
   })
 };
