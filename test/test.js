@@ -46,6 +46,6 @@ console.log("*****************************\n");
 
 var spaces = require('./spaces.json');
 
-for (var i =0; i< 100;i++){
+for (var i =0; i< 101;i++){
     addSpace(spaces.spaces[i],function(data){})
 }
