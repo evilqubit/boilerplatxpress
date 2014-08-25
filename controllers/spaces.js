@@ -65,17 +65,25 @@ exports.singleRead = function(req, res){
 exports.update = function(req, res){
     var id = req.param('id');
     Space.findById(id, function(err, space){
-        space.space_name = req.body.space_name;
-        space.space_features = req.body.space_features;
+        space.title = req.body.title;
+        space.duration = req.body.duration;
         space.neighborhood = req.body.neighborhood;
-        space.number_guests = req.body.number_guests;
+        space.features = req.body.features;
         space.latitude = req.body.latitude;
         space.longitude = req.body.longitude;
-        space.space_usages = req.body.space_usages;
-        space.pricing.hourly_rate = req.body.pricing.hourly_rate;
-        space.pricing.min_hours = req.body.pricing.min_hours;
-        space.space_amenities = req.body.space_amenities;
-        space.host_ssoid = req.body.host_ssoid;
+        space.number_guests = req.body.number_guests;
+        space.rules = req.body.rules;
+        space.images = req.body.images; //Check Array
+        space.owner.user_id = req.body.owner.user_id;
+        space.owner.first_name = req.body.owner.first_name;
+        space.owner.last_name = req.body.owner.last_name;
+        space.owner.position = req.body.owner.position;
+        space.owner.url = req.body.owner.url;
+        space.owner.avatar_url = req.body.owner.avatar_url;
+        space.amenities = req.body.amenities; //Check Array
+        space.space_use = req.body.space_use; //Check Array
+        space.price = req.body.price; //Check Array
+
         space.save(function(err){
             if(err) console.log(err);
             else
@@ -100,7 +108,7 @@ exports.search = function(req, res){
     var skip = req.query.skip || 0;
     var limit = req.query.limit || 200;
     var regex = new RegExp(req.query.q, 'i');
-    return Space.find({space_name: regex},null,{ skip: skip, limit: limit }, function(err,q){
+    return Space.find({title: regex},null,{ skip: skip, limit: limit }, function(err,q){
         return res.send(q);
     });
 }

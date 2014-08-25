@@ -1,67 +1,7 @@
-    <!--<html>
-    <head>
-        <title>{{space.title}}</title>
-    </head>
-    <body>
-  <ul>
-      <li>{{space.space_use.0.name}}</li>
-      <li><strong>ID: </strong>{{space._id}}</li>
-      <li><strong>Title: </strong>{{space.title}}</li>
-      <li><strong>Duration: </strong>{{space.duration}}</li>
-      <li><strong>Neighborhood: </strong>{{space.neighborhood}}</li>
-      <li><strong>Features: </strong>{{space.features}}</li>
-      <li><strong>Longitude: </strong>{{space.longitude}}</li>
-      <li><strong>Latitude: </strong>{{space.latitude}}</li>
-      <li><strong>Number of Guests: </strong>{{space.number_guests}}</li>
-      <li><strong>Rules: </strong>{{space.rules}}</li>
-      <li><strong>Space Images:</strong></li>
-      <ul>
-          {{#space.images}}
-          <li><a href={{.}}>{{.}}</a></li>
-          {{/space.images}}
-      </ul>
-      <li><strong>User's Info:</strong></li>
-      <ul>
-          <li><strong>USER_ID: </strong>{{space.owner.user_id}}</li>
-          <li><strong>First Name: </strong>{{space.owner.first_name}}</li>
-          <li><strong>Last Name: </strong>{{space.owner.last_name}}</li>
-          <li><strong>Position: </strong>{{space.owner.position}}</li>
-          <li><strong>URL: </strong>{{space.owner.url}}</li>
-          <li><strong>Avatar's URL: </strong><a href={{space.owner.avatar_url}}>{{space.owner.avatar_url}}</a></li>
-      </ul>
-      <li><strong>Amenities:</strong></li>
-      <ul>
-          {{#space.amenities}}
-            <li><strong>ID: </strong>{{id}}</li>
-            <li><strong>Name: </strong>{{name}}</li>
-          {{/space.amenities}}
-      </ul>
-      <li><strong>Price:</strong></li>
-      <ul>
-          {{#space.price}}
-            <li><strong>ID: </strong>{{id}}</li>
-            <li><strong>Type: </strong>{{type}}</li>
-            <li><strong>Value: </strong>{{value}}</li>
-            <li><strong>Currency: </strong>{{currency}}</li>
-          {{/space.price}}
-      </ul>
-      <li><strong>Space Use:</strong></li>
-
-      <ul>
-          {{#space.space_use}}
-            <li><strong>ID: </strong>{{id}}</li>
-            <li><strong>Name: </strong>{{name}}</li>
-          {{/space.space_use}}
-      </ul>
-
-  </ul>
-    </body>
-    </html>
--->
 <html>
     <head>
-        <title>{{space.title}}</title>
-        <link rel="stylesheet" href="/static/css/style.css" charset="utf-8"/>
+        <title></title>
+        <link rel="stylesheet" href="css/style.css" charset="utf-8"/>
     </head>
     <body>
         <!-- Top Fixed Menu-->
@@ -113,19 +53,19 @@
         <!-- Main Space Container -->
         <div class="main-container">
             <div class="main-header">
-                <h2>{{space.title}}</h2>
-                <h3>Space Type: {{{space.space_use.0.name}}}</h3>
+                <h2>Unique Studio in SoMa</h2>
+                <h3>Space Type: Production</h3>
             </div>
             <div class="space-info box">
                 <div class="space-slider">
-                    <img src="{{space.images.0}}" alt="" />
+                    <img src="http://dummyimage.com/930x400/00a592/fff.jpg&text=Dummy Slider" alt="" />
                 </div>
 
                 <div class="bottom-info">
                     <ul class="list-info">
-                        <li><strong>Price Per Hour: </strong> ${{space.price.0.value}}</li>
-                        <li>Capacity: {{space.number_guests}}</li>
-                        <li>Neighborhood: <span class="high">{{space.neighborhood}}</span></li>
+                        <li><strong>Price Per Hour: </strong> $75</li>
+                        <li>Capacity: 120</li>
+                        <li>Neighborhood: <span class="high">Dogpatch, San Francisco, CA</span></li>
                     </ul>
                     <div class="small-box">
                         <button class="btn-space">Book Now</button>
@@ -142,14 +82,16 @@
                         <div class="ps-hr-6"></div>
                         <div class="ps-hr-7"></div>
                     </div>
-                    <p class="description">{{space.features}}</p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nibh a nisi posuere, sed bibendum augue dictum. Mauris volutpat nunc nec eros molestie tincidunt. Suspendisse condimentum orci vitae semper posuere. Praesent id dui nec lacus ullamcorper rhoncus. Vestibulum id urna dolor. Vivamus et lorem id nibh varius ullamcorper. Curabitur imperdiet, dui eget vestibulum fringilla, justo diam suscipit leo, vel iaculis massa enim in nulla. Aliquam vitae nisi volutpat tortor tincidunt tincidunt id sed eros. Nulla est mauris, aliquet a libero at, interdum imperdiet est.
+                    </p>
                 </div>
 
             </div>
             <div class="user-info box">
                 <p class="prf-title">About the Host</p>
-                <img src="{{space.owner.avatar_url}}" alt="" class="prf-image" />
-                <h3 class="prf-name">{{space.owner.first_name}} {{space.owner.last_name}}</h3>
+                <img src="http://dummyimage.com/136x136/00a592/fff.jpg&text=Profile Pic" alt="" class="prf-image" />
+                <h3 class="prf-name">Donald Derek</h3>
                 <ul class="prf-raiting">
                     <li></li>
                     <li></li>
@@ -157,14 +99,19 @@
                     <li></li>
                     <li class="off"></li>
                 </ul>
-                <p class="prf-bio">Position: {{space.owner.position}}</p>
+                <p class="prf-bio">My name is Derek Haddad aka Conqueror im 13 years old and I love to build robots.</p>
             </div>
             <div class="user-aman box">
                 <p class="prf-title"> Amenities</p>
                 <ul>
-                {{#space.amenities}}
-                  <li>{{name}}</li>
-                {{/space.amenities}}
+                    <li>Wifi</li>
+                    <li>Projector</li>
+                    <li>Fitness Equipment</li>
+                    <li>Fire staff</li>
+                    <li>Logs</li>
+                    <li>Marble suit</li>
+                    <li>Log suit</li>
+                    <li>Spear</li>
                 </ul>
             </div>
             <div class="clearfix"></div>
@@ -214,16 +161,16 @@
         <!-- End of Le Footer-->
 
         <!-- Les JavaScripts -->
-        <script type="text/javascript" src="/static/js/jquery.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/jquery.js" charset="utf-8"></script>
         <script charset="utf-8">
             jQuery(document).ready(function($){
                 var landing_page = $('.new_landing_popover_menu');
                 $(".container_fixed_landing .menu").on("mouseenter", function(event){
-                    landing_page.stop(true, true).fadeIn('600');
-                });
-                landing_page.on("mouseleave", function(event){
-                    landing_page.stop(true, true).fadeOut('600');
-                });
+            		landing_page.stop(true, true).fadeIn('600');
+            	});
+            	landing_page.on("mouseleave", function(event){
+            		landing_page.stop(true, true).fadeOut('600');
+            	});
             });
         </script>
     </body>
