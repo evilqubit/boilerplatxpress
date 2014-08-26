@@ -85,8 +85,8 @@
                         <li>Neighborhood: <span class="high">{{space.neighborhood}}</span></li>
                     </ul>
                     <div class="small-box">
-                        <button class="btn-space">Book Now</button>
-                        <button class="btn-space">Message Host</button>
+                        <button onclick="window.location='http://www.peerspace.com';" class="btn-space">Book Now</button>
+                        <button onclick="window.location='http://www.peerspace.com';"  class="btn-space">Message Host</button>
                     </div>
 
                     <div class="clearfix"></div>
