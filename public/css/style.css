@@ -424,6 +424,7 @@ a:hover{
 }
 .small-box{
     float:right;
+    margin-bottom: 14px;
 }
 .btn-space{
     font-family: 'Ubuntu',sans-serif;
