@@ -22,6 +22,7 @@ body{
 
 a{
     text-decoration:none;
+    cursor:pointer;
 }
 p{
     line-height: 1.2;
@@ -35,7 +36,7 @@ ul{
     margin:0;
 }
 a:hover{
-    color: #333;
+    text-decoration:underline;
 }
 .landing_logo .peerspace {
     display: block;
@@ -160,7 +161,7 @@ a:hover{
     position: fixed;
     top: 42px;
     z-index: 60;
-    border-top: 2px solid #faa81a;
+
 }
 .new_landing_popover_menu .container {
     max-width: 1180px;
@@ -182,6 +183,12 @@ a:hover{
 .new_landing_popover_menu .landing_menu_list_new ul li a:hover {
     text-decoration: none;
     color: #faa81a;
+
+}
+.shadow-nav{
+    -webkit-overflow-scrolling: touch;
+    webkit-box-shadow: 0px 6px 6px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 6px 6px -1px rgba(0, 0, 0, 0.4);
 }
 .new_landing_popover_menu .landing_menu_list_new ul li a {
     color: #38d1be;
@@ -194,6 +201,7 @@ a:hover{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     padding-right: 10px;
+    font-weight: 500;
 }
 .landing_download_app_section {
     width: 100%;
@@ -253,6 +261,7 @@ a:hover{
     display: inline;
 }.footer_menu_new li a:hover{
         color:#faa81a;
+        text-decoration:none;
 }
 .footer_menu_new li a {
     font-size: 20px;
@@ -335,7 +344,7 @@ a:hover{
 }
 .main-container{
     width:1200px;
-    margin: 10px auto;
+    margin: 90px auto;
 }
 .box{
     float:left;
@@ -360,7 +369,7 @@ a:hover{
     border: 2px solid #5dc1b3;
 }
 .prf-title{
-    color: #faa81a;
+    color: #00a592;
     margin: 12px 0 8px 0;
     font-weight:400;
 }
@@ -383,7 +392,8 @@ a:hover{
 .prf-name{
     margin: 14px 0 6px 0;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
+    color:#008480;
 }
 .main-container .user-aman{
     width: 220px;
@@ -399,7 +409,9 @@ a:hover{
 }
 .list-info .high{
     color: #faa81a;
-    line-height: 1.5;
+}
+.list-info strong{
+    font-weight: 500;
 }
 .list-info{
     margin: 0px 10px 0 0;
@@ -408,7 +420,7 @@ a:hover{
     width: 380px;
 }
 .list-info li{
-    margin-bottom:14px;
+    margin-bottom:2px;
 }
 .small-box{
     float:right;
@@ -447,10 +459,11 @@ p.description{
 .main-header h2{
     margin: 2px 0;
     font-weight: 500;
+    color:#008480;
 }
 .main-header h3{
     margin: 6px 0;
-    color:#faa81a;
+    color:#00a592;
     font-weight: 400;
 }
 .ps-hr{
@@ -669,15 +682,13 @@ margin: 0 auto!important;
     display: none;
 }
 .slider-container .flex-direction-nav {
-    width: 45px;
+    width: 85px;
     height: 30px;
-    position: absolute;
+    position: relative;
     display: block;
-    z-index: 3;
-    top: 432px;
-    margin-left: 50%;
-    left: 275px;
+    z-index: 4;
     list-style: none;
+    margin: -26px auto;
 }
 .shadow_overlay {
     width: 100%;
@@ -730,4 +741,14 @@ margin: 0 auto!important;
     display: block;
     bottom: 0px;
     outline: none;
+}
+.slide-control-num{
+    z-index: 3;
+    font-size: 26px;
+    position: relative;
+    color: #EEE;
+    margin: 0 auto;
+    margin-top: 350px;
+    width: 80px;
+
 }

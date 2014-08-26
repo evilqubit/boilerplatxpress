@@ -77,12 +77,17 @@
 
                         {{/space.images}}
                     </ul>
+                    <div class="slide-control-num">
+                        <span class="current-slide">1</span>
+                        <span> / </span>
+                        <span class="max-slide"></span>
+                    </div>
                 </div>
                 <div class="bottom-info">
                     <ul class="list-info">
                         <li><strong>Price Per Hour: </strong> ${{space.price.0.value}}</li>
                         <li>Capacity: {{space.number_guests}}</li>
-                        <li>Neighborhood: <span class="high">{{space.neighborhood}}</span></li>
+                        <li>Neighborhood: <span class="high"><a id="neighborhood">{{space.neighborhood}}</a></span></li>
                     </ul>
                     <div class="small-box">
                         <button onclick="window.location='http://www.peerspace.com';" class="btn-space">Book Now</button>
@@ -173,23 +178,7 @@
         <!-- Les JavaScripts -->
         <script type="text/javascript" src="/static/js/jquery.js" charset="utf-8"></script>
         <script type="text/javascript" src="/static/js/jquery.flexslider.js" charset="utf-8"></script>
-        <script charset="utf-8">
-            jQuery(document).ready(function($){
-                var landing_page = $('.new_landing_popover_menu');
-                $(".container_fixed_landing .menu").on("mouseenter", function(event){
-                    landing_page.stop(true, true).fadeIn('600');
-                });
-                landing_page.on("mouseleave", function(event){
-                    landing_page.stop(true, true).fadeOut('600');
-                });
-                $('.slider-container').flexslider({
-                    animation: "fade",
-		            prevText: "",
-		            nextText: "",
-                    itemWidth: "100%",
-		            slideshow: true
-                });
-            });
-        </script>
+        <script type="text/javascript" src="/static/js/main.js" charset="utf-8"></script>
+
     </body>
 </html>
