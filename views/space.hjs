@@ -1,67 +1,10 @@
-    <!--<html>
-    <head>
-        <title>{{space.title}}</title>
-    </head>
-    <body>
-  <ul>
-      <li>{{space.space_use.0.name}}</li>
-      <li><strong>ID: </strong>{{space._id}}</li>
-      <li><strong>Title: </strong>{{space.title}}</li>
-      <li><strong>Duration: </strong>{{space.duration}}</li>
-      <li><strong>Neighborhood: </strong>{{space.neighborhood}}</li>
-      <li><strong>Features: </strong>{{space.features}}</li>
-      <li><strong>Longitude: </strong>{{space.longitude}}</li>
-      <li><strong>Latitude: </strong>{{space.latitude}}</li>
-      <li><strong>Number of Guests: </strong>{{space.number_guests}}</li>
-      <li><strong>Rules: </strong>{{space.rules}}</li>
-      <li><strong>Space Images:</strong></li>
-      <ul>
-          {{#space.images}}
-          <li><a href={{.}}>{{.}}</a></li>
-          {{/space.images}}
-      </ul>
-      <li><strong>User's Info:</strong></li>
-      <ul>
-          <li><strong>USER_ID: </strong>{{space.owner.user_id}}</li>
-          <li><strong>First Name: </strong>{{space.owner.first_name}}</li>
-          <li><strong>Last Name: </strong>{{space.owner.last_name}}</li>
-          <li><strong>Position: </strong>{{space.owner.position}}</li>
-          <li><strong>URL: </strong>{{space.owner.url}}</li>
-          <li><strong>Avatar's URL: </strong><a href={{space.owner.avatar_url}}>{{space.owner.avatar_url}}</a></li>
-      </ul>
-      <li><strong>Amenities:</strong></li>
-      <ul>
-          {{#space.amenities}}
-            <li><strong>ID: </strong>{{id}}</li>
-            <li><strong>Name: </strong>{{name}}</li>
-          {{/space.amenities}}
-      </ul>
-      <li><strong>Price:</strong></li>
-      <ul>
-          {{#space.price}}
-            <li><strong>ID: </strong>{{id}}</li>
-            <li><strong>Type: </strong>{{type}}</li>
-            <li><strong>Value: </strong>{{value}}</li>
-            <li><strong>Currency: </strong>{{currency}}</li>
-          {{/space.price}}
-      </ul>
-      <li><strong>Space Use:</strong></li>
-
-      <ul>
-          {{#space.space_use}}
-            <li><strong>ID: </strong>{{id}}</li>
-            <li><strong>Name: </strong>{{name}}</li>
-          {{/space.space_use}}
-      </ul>
-
-  </ul>
-    </body>
-    </html>
--->
 <html>
     <head>
         <title>{{space.title}}</title>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/static/css/style.css" charset="utf-8"/>
+
     </head>
     <body>
         <!-- Top Fixed Menu-->
@@ -117,10 +60,17 @@
                 <h3>Space Type: {{{space.space_use.0.name}}}</h3>
             </div>
             <div class="space-info box">
-                <div class="space-slider">
-                    <img src="{{space.images.0}}" alt="" />
-                </div>
+                <div class="slider-container" style="width:100%">
+                    <div class="shadow_overlay">
 
+                    </div>
+                    <ul class="slides">
+                        {{#space.images}}
+                            <li><img src="{{.}}" alt="" /></li>
+
+                        {{/space.images}}
+                    </ul>
+                </div>
                 <div class="bottom-info">
                     <ul class="list-info">
                         <li><strong>Price Per Hour: </strong> ${{space.price.0.value}}</li>
@@ -215,6 +165,7 @@
 
         <!-- Les JavaScripts -->
         <script type="text/javascript" src="/static/js/jquery.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/static/js/jquery.flexslider.js" charset="utf-8"></script>
         <script charset="utf-8">
             jQuery(document).ready(function($){
                 var landing_page = $('.new_landing_popover_menu');
@@ -223,6 +174,13 @@
                 });
                 landing_page.on("mouseleave", function(event){
                     landing_page.stop(true, true).fadeOut('600');
+                });
+                $('.slider-container').flexslider({
+                    animation: "fade",
+		            prevText: "",
+		            nextText: "",
+                    itemWidth: "100%",
+		            slideshow: true
                 });
             });
         </script>

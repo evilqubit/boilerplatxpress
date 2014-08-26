@@ -2,7 +2,7 @@ body{
     margin:0;
     padding:0;
     background: white;
-    font-family: 'Muli-Regular',sans-serif;
+    font-family: 'Ubuntu',sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 1;
@@ -11,14 +11,15 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
-@font-face{
+/*@font-face{
 	font-family: 'Muli-Regular';
 	src: url('../fonts/muli-regular-webfont.eot');
 	src: url('../fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
 	     url('../fonts/muli-regular-webfont.woff') format('woff'),
 	     url('../fonts/muli-regular-webfont.ttf') format('truetype'),
 	     url('../fonts/muli-regular-webfont.svg#webfont') format('svg');
-}
+}*/
+
 a{
     text-decoration:none;
 }
@@ -85,16 +86,16 @@ a:hover{
 .container_fixed_landing {
     position: relative;
     height: 42px;
-    max-width: 945px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .landing_fixed_menu .menu {
-    position: absolute;
     top: 0;
     left: 0;
     position: absolute;
     display: block;
     cursor: pointer;
+    margin-left: 0px;
 }
 .landing_burger {
     width: 20px;
@@ -163,8 +164,8 @@ a:hover{
     border-top: 2px solid #faa81a;
 }
 .new_landing_popover_menu .container {
-    max-width: 945px;
-    margin: 0 auto;
+    max-width: 1180px;
+    margin: 0 48px;
 }
 .new_landing_popover_menu .landing_menu_list_new ul {
     list-style: none;
@@ -397,10 +398,6 @@ a:hover{
     margin-bottom: 4px;
     font-size: 14px;
 }
-.main-container .space-slider img{
-    height:400px;
-    width:100%;
-}
 .list-info .high{
     color: #faa81a;
     line-height: 1.5;
@@ -418,7 +415,7 @@ a:hover{
     float:right;
 }
 .btn-space{
-    font-family: 'Muli-Regular',sans-serif;
+    font-family: 'Ubuntu',sans-serif;
     padding:20px 10px;
     width:204px;
     font-size:18px;
@@ -446,16 +443,16 @@ p.description{
     margin-top:22px;
 }
 .main-header{
-    font-family: 'Muli-Regular',sans-serif;
+    font-family: 'Ubuntu',sans-serif;
 }
 .main-header h2{
     margin: 2px 0;
-    font-weight: bold;
+    font-weight: 500;
 }
 .main-header h3{
     margin: 6px 0;
     color:#faa81a;
-    font-weight:bold;
+    font-weight: 400;
 }
 .ps-hr{
     width:100%;
@@ -543,4 +540,195 @@ p.description{
     height:12px;
     background:#e8f3dc;
     float:left;
+}
+
+/*Slider
+.slider-container.flex-control-paging .flex-active {
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    padding-top: 10px;
+    left: 14px;
+}
+.slider-container .flex-control-paging a {
+    outline: none;
+    display: none;
+}
+.slider-container .flex-direction-nav {
+    width: 115px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    z-index: 3;
+    top: 432px;
+    margin-left: 50%;
+    left: -57px;
+    list-style: none;
+}
+.flex-control-paging {
+    width: 115px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    z-index: 3;
+    bottom: 39px;
+    margin-left: 50%;
+    left: -57px;
+    list-style: none;
+}
+.slider-container .flex-prev {
+    background: url('../images/small_arrow_prev.png') no-repeat;
+    left: -28px;
+    background-size: 100% auto;
+}
+.slider-container .flex-next {
+    background: url('../images/small_arrow_next.png') no-repeat;
+    right: 0;
+    background-size: 100% auto;
+}
+.bg_slide_image {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin: 0px auto;
+}
+.slider-container .flex-prev, .slider-container .flex-next {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    outline: none;
+}
+.slider-container_numberof {
+    position: absolute;
+    right: 35px;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: -6px;
+}
+.slider-container .slides>li {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slider-container{
+display: block;
+position: relative; //fixed or absolute may be needed
+height: 100%!important;
+overflow: hidden!important;
+width: 100%!important;
+}
+
+.slider-container .slides,
+.slider-container .slides li{
+width: 100%!important;
+height: 100%!important;
+}
+
+.slider-container .slides img{
+min-height: 100%;
+min-width: 100%;
+max-width: 10000%!important; //over ride any existing responsive image styling
+margin: 0 auto!important;
+
+}
+
+.main-container .space-slider, .main-container .space-slider img{
+    height:400px;
+    width:100%;
+}*/
+.slides img{
+    width:100%;
+    height:400px;
+    display: block;
+}
+.slider-container{
+    height:400px;
+}
+.slider-container.flex-control-paging .flex-active {
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    padding-top: 10px;
+    left: 14px;
+}
+.slider-container .flex-control-paging a {
+    outline: none;
+    display: none;
+}
+.slider-container .flex-direction-nav {
+    width: 45px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    z-index: 3;
+    top: 432px;
+    margin-left: 50%;
+    left: 275px;
+    list-style: none;
+}
+.shadow_overlay {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 3;
+    margin-bottom: -400px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 43%, rgba(0,0,0,0.65) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(43%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.65) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.65) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.65) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+.flex-control-paging {
+    width: 115px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    z-index: 3;
+    bottom: 39px;
+    margin-left: 50%;
+    left: -57px;
+    list-style: none;
+}
+.slider-container .flex-prev {
+    background: url('../images/small_arrow_prev.png') no-repeat;
+    left: -28px;
+    background-size: 100% auto;
+}
+.slider-container .flex-next {
+    background: url('../images/small_arrow_next.png') no-repeat;
+    right: 0;
+    background-size: 100% auto;
+}
+.bg_slide_image {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin: 0px auto;
+}
+.slider-container .flex-prev, .slider-container .flex-next {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    outline: none;
 }

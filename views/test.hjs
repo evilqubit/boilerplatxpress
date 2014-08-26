@@ -1,170 +1,59 @@
 <html>
-    <head>
-        <title>{{}}</title>
-        <link rel="stylesheet" href="css/style.css" charset="utf-8"/>
-    </head>
-    <body>
-        <!-- Top Fixed Menu-->
-        <div class="landing_fixed_menu">
-            <div class="container container_fixed_landing">
-                <div class="menu">
-                    <div class="landing_burger">
-                        <span class="1"></span>
-                        <span class="2"></span>
-                        <span class="3"></span>
-                    </div>
-                    Menu
-                </div>
-                <div class="landing_logo">
-                    <a onclick="ga('send', 'event', 'Navigation', 'click', 'icon-peerspace-logo');" href="http://www.peerspace.com/">
-                        <span class="peerspace">Peerspace</span>
-                    </a>
-                </div>
-                <!--<a class="landing_get_app" href="http://www.peerspace.com" target="_blank">Get the App</a>-->
-            </div>
-        </div>
-        <!-- End of Top Fixed Menu -->
-        <!-- Pover Menu -->
-        <div class="new_landing_popover_menu" style="display: none;">
-            <div class="container">
-                <div class="landing_menu_list_new">
-                    <ul id="menu-main-menu" class="navigation">
-                        <li id="menu-item-2233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2233">
-                            <a href="http://www.peerspace.com/about/">About Us</a>
-                        </li>
-                        <li id="menu-item-841" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-125 current_page_item menu-item-841">
-                            <a href="http://www.peerspace.com/guest/">Be a Guest</a>
-                        </li>
-                        <li id="menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842">
-                            <a href="http://www.peerspace.com/host/">Be a Host</a>
-                        </li>
-                        <li id="menu-item-832" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-832">
-                            <a href="http://www.peerspace.com/blog/">Blog</a>
-                        </li>
-                        <li id="menu-item-836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-836">
-                            <a href="http://support.peerspace.com/hc/en-us">Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- End of Pover Menu -->
+<head>
+    <title>{{space.title}}</title>
+</head>
+<body>
+<ul>
+  <li>{{space.space_use.0.name}}</li>
+  <li><strong>ID: </strong>{{space._id}}</li>
+  <li><strong>Title: </strong>{{space.title}}</li>
+  <li><strong>Duration: </strong>{{space.duration}}</li>
+  <li><strong>Neighborhood: </strong>{{space.neighborhood}}</li>
+  <li><strong>Features: </strong>{{space.features}}</li>
+  <li><strong>Longitude: </strong>{{space.longitude}}</li>
+  <li><strong>Latitude: </strong>{{space.latitude}}</li>
+  <li><strong>Number of Guests: </strong>{{space.number_guests}}</li>
+  <li><strong>Rules: </strong>{{space.rules}}</li>
+  <li><strong>Space Images:</strong></li>
+  <ul>
+      {{#space.images}}
+      <li><a href={{.}}>{{.}}</a></li>
+      {{/space.images}}
+  </ul>
+  <li><strong>User's Info:</strong></li>
+  <ul>
+      <li><strong>USER_ID: </strong>{{space.owner.user_id}}</li>
+      <li><strong>First Name: </strong>{{space.owner.first_name}}</li>
+      <li><strong>Last Name: </strong>{{space.owner.last_name}}</li>
+      <li><strong>Position: </strong>{{space.owner.position}}</li>
+      <li><strong>URL: </strong>{{space.owner.url}}</li>
+      <li><strong>Avatar's URL: </strong><a href={{space.owner.avatar_url}}>{{space.owner.avatar_url}}</a></li>
+  </ul>
+  <li><strong>Amenities:</strong></li>
+  <ul>
+      {{#space.amenities}}
+        <li><strong>ID: </strong>{{id}}</li>
+        <li><strong>Name: </strong>{{name}}</li>
+      {{/space.amenities}}
+  </ul>
+  <li><strong>Price:</strong></li>
+  <ul>
+      {{#space.price}}
+        <li><strong>ID: </strong>{{id}}</li>
+        <li><strong>Type: </strong>{{type}}</li>
+        <li><strong>Value: </strong>{{value}}</li>
+        <li><strong>Currency: </strong>{{currency}}</li>
+      {{/space.price}}
+  </ul>
+  <li><strong>Space Use:</strong></li>
 
-        <!-- Main Space Container -->
-        <div class="main-container">
-            <div class="main-header">
-                <h2>{{space.title}}</h2>
-                <h3>Space Type: {{{space.space_use.0.name}}}</h3>
-            </div>
-            <div class="space-info box">
-                <div class="space-slider">
-                    <img src="{{space.images.0}}" alt="" />
-                </div>
+  <ul>
+      {{#space.space_use}}
+        <li><strong>ID: </strong>{{id}}</li>
+        <li><strong>Name: </strong>{{name}}</li>
+      {{/space.space_use}}
+  </ul>
 
-                <div class="bottom-info">
-                    <ul class="list-info">
-                        <li><strong>Price Per Hour: </strong> ${{space.price.0.value}}</li>
-                        <li>Capacity: {{space.number_guests}}</li>
-                        <li>Neighborhood: <span class="high">{{space.neighborhood}}</span></li>
-                    </ul>
-                    <div class="small-box">
-                        <button class="btn-space">Book Now</button>
-                        <button class="btn-space">Message Host</button>
-                    </div>
-
-                    <div class="clearfix"></div>
-                    <div class="ps-hr">
-                        <div class="ps-hr-1"></div>
-                        <div class="ps-hr-2"></div>
-                        <div class="ps-hr-3"></div>
-                        <div class="ps-hr-4"></div>
-                        <div class="ps-hr-5"></div>
-                        <div class="ps-hr-6"></div>
-                        <div class="ps-hr-7"></div>
-                    </div>
-                    <p class="description">{{space.features}}</p>
-                </div>
-
-            </div>
-            <div class="user-info box">
-                <p class="prf-title">About the Host</p>
-                <img src="{{space.owner.avatar_url}}" alt="" class="prf-image" />
-                <h3 class="prf-name">{{space.owner.first_name}} {{space.owner.last_name}}</h3>
-                <ul class="prf-raiting">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li class="off"></li>
-                </ul>
-                <p class="prf-bio">Position: {{space.owner.position}}</p>
-            </div>
-            <div class="user-aman box">
-                <p class="prf-title"> Amenities</p>
-                <ul>
-                {{#space.amenities}}
-                  <li><strong>Name: </strong>{{name}}</li>
-                {{/space.amenities}}
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <!-- End of Main Space Container-->
-        <div class="bottom-container">
-            <img src="http://dummyimage.com/1200x400/000/fff.jpg&text=Google Maps" alt="" style="width: 100%;"/>
-            <div class="ps-hr-big">
-                <div class="ps-hr-1"></div>
-                <div class="ps-hr-2"></div>
-                <div class="ps-hr-3"></div>
-                <div class="ps-hr-4"></div>
-                <div class="ps-hr-5"></div>
-                <div class="ps-hr-6"></div>
-                <div class="ps-hr-7"></div>
-            </div>
-        </div>
-        <!-- Le Footer-->
-        <div class="landing_download_app_section">
-            <div class="container landing_fix2">
-                <h2>Check out our Spaces and reserve yours today</h2>
-                <span><a onclick="ga('send', 'event', 'Download Interest', 'click', 'app-store-button-bottom-guest');" href="http://www.peerspace.com#top"></a></span>
-            </div>
-        </div>
-        <div class="landing_footer">
-            <div class="container ipad_footer_container_fix">
-                <ul class="footer_menu_new">
-                    <li><a href="http://www.peerspace.com/about/">About Us</a></li>
-                    <li><a href="http://www.peerspace.com/guest/">Be a Guest</a></li>
-                    <li><a href="http://www.peerspace.com/host/">Be a Host</a></li>
-                    <li><a href="http://www.peerspace.com/blog/">Blog</a></li>
-                    <li><a href="http://support.peerspace.com/hc/en-us">Support</a></li>
-                    <li><a href="http://www.peerspace.com/terms/">Terms &amp; Conditions</a></li>
-                    <li><a href="http://www.peerspace.com/privacy/">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <ul class="landing_sm_menu">
-                    <li><a onclick="ga('send', 'event', 'Social', 'click', 'fb-button');" href="https://www.facebook.com/peerspace/" class="landing_small_facebook" target="_blank"></a></li>
-                    <li><a onclick="ga('send', 'event', 'Social', 'click', 'twitter-button');" href="https://twitter.com/PeerSpaceApp" class="landing_small_twitter" target="_blank"></a></li>
-                    <li><a onclick="ga('send', 'event', 'Social', 'click', 'li-button');" href="https://www.linkedin.com/company/peerspace" class="landing_small_linkedin" target="_blank"></a></li>
-                    <li><a onclick="ga('send', 'event', 'Social', 'click', 'gplus-button');" href="https://plus.google.com/101016984360991256601" class="landing_small_googleplus" target="_blank"></a></li>
-                    <li><a onclick="ga('send', 'event', 'Social', 'click', 'pinterest-button');" href="http://www.pinterest.com/peerspaceapp/" class="landing_small_pinterest" target="_blank"></a></li>
-                </ul>
-                <p class="landing_copyright">Copyright 2014 PeerSpace. All Rights Reserved.</p>
-        </div>
-        <!-- End of Le Footer-->
-
-        <!-- Les JavaScripts -->
-        <script type="text/javascript" src="js/jquery.js" charset="utf-8"></script>
-        <script charset="utf-8">
-            jQuery(document).ready(function($){
-                var landing_page = $('.new_landing_popover_menu');
-                $(".container_fixed_landing .menu").on("mouseenter", function(event){
-                    landing_page.stop(true, true).fadeIn('600');
-                });
-                landing_page.on("mouseleave", function(event){
-                    landing_page.stop(true, true).fadeOut('600');
-                });
-            });
-        </script>
-    </body>
+</ul>
+</body>
 </html>
