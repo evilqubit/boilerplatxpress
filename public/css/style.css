@@ -92,7 +92,6 @@ a:hover{
 .landing_fixed_menu .menu {
     top: 0;
     left: 0;
-    position: absolute;
     display: block;
     cursor: pointer;
     margin-left: 0px;
