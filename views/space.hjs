@@ -1,7 +1,14 @@
 <html>
     <head>
         <title>{{space.title}}</title>
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+        <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+        <script>
+          WebFont.load({
+            google: {
+              families: ['Ubuntu:400,500']
+            }
+          });
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/static/css/style.css" charset="utf-8"/>
 
