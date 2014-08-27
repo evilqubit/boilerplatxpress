@@ -122,7 +122,7 @@
                 <p class="prf-bio">Position: {{space.owner.position}}</p>
             </div>
             <div class="user-aman box">
-                <p class="prf-title"> Amenities</p>
+                <p class="prf-title prf-ama"> Amenities</p>
                 <ul>
                 {{#space.amenities}}
                   <li>{{name}}</li>
