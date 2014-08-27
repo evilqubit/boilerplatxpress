@@ -10,7 +10,7 @@
           });
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/static/css/style.css" charset="utf-8"/>
+        <link rel="stylesheet" href="/spaces/static/css/style.css" charset="utf-8"/>
 
     </head>
     <body>
@@ -176,9 +176,9 @@
         <!-- End of Le Footer-->
 
         <!-- Les JavaScripts -->
-        <script type="text/javascript" src="/static/js/jquery.js" charset="utf-8"></script>
-        <script type="text/javascript" src="/static/js/jquery.flexslider.js" charset="utf-8"></script>
-        <script type="text/javascript" src="/static/js/main.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/spaces/static/js/jquery.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/spaces/static/js/jquery.flexslider.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/spaces/static/js/main.js" charset="utf-8"></script>
 
     </body>
 </html>
