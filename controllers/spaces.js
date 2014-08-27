@@ -51,12 +51,16 @@ renderSpace = function(res, spaces){
 
 exports.singleRead = function(req, res){
   var id = req.param('id');
+  var type = req.query.t || "html";
   Space.find({_id:id}, function(err, space){
       if(err) console.log(err);
       else{
           console.log("Read Space with id: \'" + id + "\'");
-          if(typeof space[0] !== 'undefined')
-              return renderSpace(res,{space:space[0]});
+          if(typeof space[0] !== 'undefined'){
+                if(type === "html")
+                    return renderSpace(res,{space:space[0]});
+                else return res.send(space);
+          }
           else return res.send("Can't find id");
       }
   })
