@@ -8,7 +8,7 @@ module.exports = {
       app: {
         name: 'PeerSpace REST API - DEV'
       },
-      sta: '/'
+      sta: '/spaces'
   },
   prod: {
       db: 'mongodb://',
@@ -16,6 +16,6 @@ module.exports = {
       app: {
         name: 'PeerSpace REST API'
     },
-      sta: '/spaces'
+      sta: '/'
   }
 }
