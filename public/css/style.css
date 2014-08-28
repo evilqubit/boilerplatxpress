@@ -892,3 +892,4 @@ and (max-width : 470px) {
         width:33%;
     }
 }
+#map-canvas { height: 100% }
