@@ -11,7 +11,7 @@
           });
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/style.css" charset="utf-8"/>
+        <link rel="stylesheet" href="/spaces/css/style.css" charset="utf-8"/>
 
     </head>
     <body>
@@ -178,9 +178,9 @@
 
         <!-- Les JavaScripts -->
              <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript" src="/js/jquery.js" charset="utf-8"></script>
-        <script type="text/javascript" src="/js/jquery.flexslider.js" charset="utf-8"></script>
-        <script type="text/javascript" src="/js/main.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/spaces/js/jquery.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/spavces/js/jquery.flexslider.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/spaces/js/main.js" charset="utf-8"></script>
 
     </body>
 </html>
