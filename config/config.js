@@ -11,7 +11,7 @@ module.exports = {
       sta: '/spaces'
   },
   prod: {
-      db: 'mongodb://',
+      db: 'mongodb://localhost/peerspace',
       root: rootPath,
       app: {
         name: 'PeerSpace REST API'

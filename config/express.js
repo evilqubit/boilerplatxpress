@@ -5,6 +5,7 @@ module.exports = function (app, config) {
     app.set('view engine', 'hjs');
     app.use(express.compress());
     app.use(config.sta, express.static(config.root + '/public'));
+    console.log(config.sta);
     app.set('port', process.env.PORT || 3000);
     app.use(express.favicon());
     app.use(express.logger('dev'));
