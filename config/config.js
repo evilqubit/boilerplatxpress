@@ -7,13 +7,15 @@ module.exports = {
       root: rootPath,
       app: {
         name: 'PeerSpace REST API - DEV'
-      }
+      },
+      sta: '/'
   },
   prod: {
       db: 'mongodb://',
       root: rootPath,
       app: {
         name: 'PeerSpace REST API'
-      }
+    },
+      sta: '/spaces'
   }
 }
