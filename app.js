@@ -8,6 +8,9 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 var mongoose = require('mongoose');
+var winston = require('winston');
+winston.add(winston.transports.File, { filename: 'logs/logfile.log' });
+winston.remove(winston.transports.Console);
 
 var app = express();
 
@@ -31,5 +34,5 @@ require('./config/express')(app, config)
 require('./config/routes')(app);
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log('PeerSpace API on port ' + app.get('port'));
+  winston.info('PeerSpace API on port ' + app.get('port'));
 });

@@ -21,7 +21,7 @@ function initialize() {
             $.ajax({
                 'async': false,
                 'global': false,
-                'url': "http://localhost:3000/js/test.json",
+                'url': "js/test.json",
                 'dataType': "json",
                 'success': function (data) {
                      json = data;

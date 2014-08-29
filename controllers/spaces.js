@@ -3,15 +3,15 @@ var fs = require('fs');
 var path = require('path');
 var publicSpaces = path.resolve(__dirname + "/../" + "public/spaces/");
 var Space = mongoose.model('Space');
-var Log = require('log');
-var log = new Log('info');
+var winston = require('winston');
+
 
 exports.create = function(req, res){
     var space = new Space(req.body);
     space.save(function(err){
-        if(err) log.error(err);
+        if(err) winston.error(err);
         else {
-            log.info("ADD SPACE #" + space.id);
+            winston.info("ADD SPACE #" + space.id);
             return res.send(space);
         }
     })
@@ -21,9 +21,9 @@ exports.readAll = function(req, res){
     var skip = req.query.skip || 0;
     var limit = req.query.limit || 200;
     Space.find(null,null,{ skip: skip, limit: limit },function(err, spaces){
-        if(err) log.error(err);
+        if(err) winston.error(err);
         else{
-            log.info("READ ALL SPACES");
+            winston.info("READ ALL SPACES");
             return res.send(spaces);
         }
     });
@@ -31,19 +31,19 @@ exports.readAll = function(req, res){
 
 renderSpace = function(res, spaces){
     res.render('space',spaces,function(err, html){
-        if (err) log.error(err);
+        if (err) winston.error(err);
         var id = spaces.space._id;
         var spacePath = publicSpaces + "/" + id +'.html';
         fs.exists(spacePath,function(exists){
             if(exists){
-                    log.info("GET CACHE SPACE #" + id);
+                    winston.info("GET CACHE SPACE #" + id);
                     return res.sendfile(spacePath);
             }
             else {
                 fs.writeFile(spacePath, html, function (err) {
-                    if (err) return log.error(err);
+                    if (err) return winston.error(err);
                     else {
-                        log.info("CACHING SPACE #" + id);
+                        winston.info("CACHING SPACE #" + id);
                         return res.sendfile(spacePath);
                     }
                 });
@@ -58,19 +58,19 @@ exports.singleRead = function(req, res){
   var type = req.query.t || "html";
 
   Space.find({_id:id}, function(err, space){
-      if(err) log.error(err);
+      if(err) winston.error(err);
 
       else{
           if(typeof space[0] !== 'undefined'){
                 if(type === "html")
                     return renderSpace(res,{space:space[0]});
                 else {
-                    log.info("GET JSON SPACE #" + id);
+                    winston.info("GET JSON SPACE #" + id);
                     return res.send(space);
                 }
           }
           else {
-              log.error("CANT GET SPACE #" + id);
+              winston.error("CANT GET SPACE #" + id);
               return res.redirect("http://www.peerspace.com/4.04.4004");
           }
       }
@@ -100,9 +100,9 @@ exports.update = function(req, res){
         space.price = req.body.price; //Check Array
 
         space.save(function(err){
-            if(err) log.error(err);
+            if(err) winston.error(err);
             else
-                log.info("POST SPACE #" + id);
+                winston.info("PUT SPACE #" + id);
                 return res.send(space);
         });
     });
@@ -112,9 +112,9 @@ exports.delete = function(req, res){
   var id = req.param('id');
   Space.findById(id, function(err, space){
       space.remove(function(err){
-          if(err) log.error(err);
+          if(err) winston.error(err);
           else {
-              log.info("DEL SPACE #" + id);
+              winston.info("DEL SPACE #" + id);
               return res.send("DEL SPACE: #" + id);
           }
       })
@@ -126,9 +126,9 @@ exports.search = function(req, res){
     var limit = req.query.limit || 200;
     var regex = new RegExp(req.query.q, 'i');
     return Space.find({title: regex},null,{ skip: skip, limit: limit }, function(err,q){
-        if(err) log.error(err);
+        if(err) winston.error(err);
         else{
-            log.info("SEARCH TITLE: " + regex);
+            winston.info("SEARCH TITLE: " + regex);
             return res.send(q);
         }
     });
