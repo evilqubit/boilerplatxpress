@@ -1,5 +1,9 @@
 jQuery(document).ready(function($){
     var host = document.location.origin;
+    var production = false;
+    if(host == "www.peerspace.com"){
+        production = true;
+    }
     var name = $(".prf-name").html();
     var abbr = name.match(/[a-zA-Z]+\s?\w/);
     $(".prf-name").html(abbr[0]+".");
@@ -83,7 +87,7 @@ jQuery(document).ready(function($){
                 $.ajax({
                     'async': false,
                     'global': false,
-                    'url': host+"/api/geo",
+                    'url': host + (production == true ? "/spaces/api/geo" : "/api/geo"),
                     'dataType': "json",
                     'success': function (data) {
                          json = data;

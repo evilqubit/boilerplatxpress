@@ -147,3 +147,6 @@
 {"level":"info","message":"GET CACHE SPACE #ff339018e82011e39d1d064910be75d3","timestamp":"2014-08-30T15:09:39.591Z"}
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-30T15:09:53.804Z"}
 {"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-08-30T15:10:09.319Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-08-30T15:19:37.683Z"}
+{"level":"info","message":"GET CACHE SPACE #ff339018e82011e39d1d064910be75d3","timestamp":"2014-08-30T15:19:43.584Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-30T15:19:56.139Z"}
