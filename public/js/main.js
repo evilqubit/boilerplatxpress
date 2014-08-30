@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
     var host = document.location.origin;
     var production = false;
-    if(host == "www.peerspace.com"){
+    if(host == "http://www.peerspace.com"){
         production = true;
     }
     var name = $(".prf-name").html();
