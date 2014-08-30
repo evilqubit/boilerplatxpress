@@ -4,3 +4,5 @@
 {"level":"info","message":"GET JSON SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-29T15:21:43.466Z"}
 {"level":"info","message":"SEARCH TITLE: /studio/i","timestamp":"2014-08-29T15:21:49.912Z"}
 {"level":"info","message":"SEARCH TITLE: /StUdIo/i","timestamp":"2014-08-29T15:21:56.240Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-08-30T11:24:51.941Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-30T11:25:28.175Z"}

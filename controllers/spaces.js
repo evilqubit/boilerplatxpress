@@ -52,6 +52,29 @@ renderSpace = function(res, spaces){
     });
 }
 
+exports.singleReadLongURI = function(req, res){
+
+  var uuid = req.param('uuid');
+  var uuid_arr = uuid.split("_");
+  var id = uuid_arr[uuid_arr.length-1];
+  console.log(id);
+
+  Space.find({_id:id}, function(err, space){
+      if(err) winston.error(err);
+
+      else{
+          if(typeof space[0] !== 'undefined'){
+                    return renderSpace(res,{space:space[0]});
+          }
+          else {
+              winston.error("CANT GET SPACE #" + id);
+              return res.redirect("http://www.peerspace.com/4.04.4004");
+          }
+      }
+  })
+};
+
+
 exports.singleRead = function(req, res){
 
   var id = req.param('id');
