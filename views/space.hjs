@@ -130,6 +130,8 @@
         </div>
         <!-- End of Main Space Container-->
         <div class="bottom-container">
+            <input type="hidden" value={{space.longitude}} id="lon">
+            <input type="hidden" value={{space.latitude}} id="lat">
             <div id="map-canvas" style="width:100%;"></div>
             <div class="ps-hr-big">
                 <div class="ps-hr-1"></div>

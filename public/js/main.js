@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+    var host = document.location.origin;
     var name = $(".prf-name").html();
     var abbr = name.match(/[a-zA-Z]+\s?\w/);
     $(".prf-name").html(abbr[0]+".");
@@ -60,8 +61,8 @@ jQuery(document).ready(function($){
 
     //Maps
     function initialize() {
-            var latitude = 37.7990,
-                longitude = -122.3600,
+            var latitude = $("#lat").val(),
+                longitude = $("#lon").val(),
                 radius = 8000, //how is this set up
                 center = new google.maps.LatLng(latitude,longitude),
                 bounds = new google.maps.Circle({center: center, radius: radius}).getBounds(),
@@ -82,7 +83,7 @@ jQuery(document).ready(function($){
                 $.ajax({
                     'async': false,
                     'global': false,
-                    'url': "/spaces/js/test.json",
+                    'url': host+"/api/geo",
                     'dataType': "json",
                     'success': function (data) {
                          json = data;
@@ -97,11 +98,11 @@ jQuery(document).ready(function($){
             //loop between each of the json elements
             for (var i = 0, length = json.length; i < length; i++) {
                 var data = json[i],
-                latLng = new google.maps.LatLng(data.lat, data.lng);
+                latLng = new google.maps.LatLng(data.latitude, data.longitude);
 
-                    if ((data.lat == 37.761647) && (data.lng == -122.412064)) {
+                    if ((data.latitude == $("#lat").val()) && (data.longitude == $("#lon").val())) {
                         // Creating a marker and putting it on the map
-                        var image = '/images/Pin-(53px)-Orange.png';
+                        var image = host+'/spaces/images/Pin-(53px)-Orange.png';
                         var marker = new google.maps.Marker({
                         position: latLng,
                         map: map,
@@ -111,7 +112,7 @@ jQuery(document).ready(function($){
 
 
                     // Creating a marker and putting it on the map
-                    var image = '/images/map_pin.png';
+                    var image = host+'/spaces/images/map_pin.png';
                     var marker = new google.maps.Marker({
                         position: latLng,
                         map: map,

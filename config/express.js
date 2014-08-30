@@ -12,7 +12,7 @@ module.exports = function (app, config) {
     app.use(express.methodOverride());
     app.use(app.router);
     app.use(function(req, res, next){
-            res.status(404);
-            return res.redirect("http://www.peerspace.com/4.04.4004");
+            //res.status(404);
+            //return res.redirect("http://www.peerspace.com/4.04.4004");
     });
 }

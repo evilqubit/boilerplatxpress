@@ -156,3 +156,15 @@ exports.search = function(req, res){
         }
     });
 }
+
+exports.geo = function(req, res){
+    var skip = req.query.skip || 0;
+    var limit = req.query.limit || 200;
+    Space.find(null,'latitude longitude',{ skip: skip, limit: limit },function(err, spaces){
+        if(err) winston.error(err);
+        else{
+            winston.info("READ ALL SPACES");
+            return res.json(spaces);
+        }
+    });
+}

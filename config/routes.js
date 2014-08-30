@@ -11,5 +11,6 @@ module.exports = function(app){
     app.get('/:uuid',spaces.singleReadLongURI);
     app.put('/api/spaces/:id', spaces.update);
     app.delete('/api/spaces/:id',spaces.delete);
+    app.get('/api/geo',spaces.geo);
 
 }
