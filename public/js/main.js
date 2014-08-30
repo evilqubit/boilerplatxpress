@@ -43,6 +43,7 @@ jQuery(document).ready(function($){
         itemWidth: "100%",
         slideshow: true,
         after: function(){
+                $('.slider-container').css("visibility","visible");
                 var max_num = $(".slider-container ol li").length;
                 var active = $(".slider-container ol li .flex-active").html();
                 var current_active = $('.current-slide');
@@ -81,7 +82,7 @@ jQuery(document).ready(function($){
                 $.ajax({
                     'async': false,
                     'global': false,
-                    'url': "http://localhost:3000/js/test.json",
+                    'url': "/spaces/js/test.json",
                     'dataType': "json",
                     'success': function (data) {
                          json = data;
