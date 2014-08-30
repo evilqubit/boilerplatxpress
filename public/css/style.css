@@ -662,11 +662,58 @@ margin: 0 auto!important;
     height:400px;
     width:100%;
 }*/
-.slides img{
-    width:100%;
-    height:400px;
-    display: block;
+ul.slides
+{
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: -34px;
+  list-style-type: none;
 }
+
+ul.slides li
+{
+  float: left;
+  width: 33.3%;
+  padding: 0;
+  margin: 0;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 43%, rgba(0,0,0,0.65) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(43%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.65) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.65) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.65) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,rgba(0,0,0,0.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul.slides li a
+{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul.slides img
+{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  webkit-transform: scale(2.4);
+  transform: scale(2.4);
+  margin: auto;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+ul.slides a:hover img, a:focus img
+{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
 .slider-container{
     height:400px;
 }
@@ -752,7 +799,7 @@ margin: 0 auto!important;
     position: relative;
     color: #EEE;
     margin: 0 auto;
-    margin-top: 350px;
+    margin-top: 0;
     width: 80px;
 }
 @media only screen
@@ -891,5 +938,10 @@ and (max-width : 470px) {
         margin:-170px 13px 0 0;
         width:33%;
     }
+    ul.slides img
+    {
+      webkit-transform: scale(1.2);
+      transform: scale(1.2);
+  }
 }
 #map-canvas { height: 100% }

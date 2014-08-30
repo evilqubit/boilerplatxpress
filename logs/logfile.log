@@ -13,3 +13,16 @@
 {"level":"error","message":"CANT GET SPACE #api","timestamp":"2014-08-30T11:37:42.386Z"}
 {"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-08-30T11:50:35.726Z"}
 {"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-30T11:50:36.387Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-08-30T12:09:18.761Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-30T12:09:32.554Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-30T12:13:04.181Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-30T12:14:20.858Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-30T12:15:57.023Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-30T12:16:32.178Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-30T12:18:48.689Z"}
+{"level":"info","message":"SEARCH TITLE: /theater/i","timestamp":"2014-08-30T12:19:52.677Z"}
+{"level":"info","message":"CACHING SPACE #cd2926119db111e3a77e064cf8c38b5b","timestamp":"2014-08-30T12:20:20.410Z"}
+{"level":"info","message":"GET CACHE SPACE #cd2926119db111e3a77e064cf8c38b5b","timestamp":"2014-08-30T12:22:28.052Z"}
+{"level":"info","message":"GET CACHE SPACE #cd2926119db111e3a77e064cf8c38b5b","timestamp":"2014-08-30T12:23:24.837Z"}
+{"level":"info","message":"GET CACHE SPACE #cd2926119db111e3a77e064cf8c38b5b","timestamp":"2014-08-30T12:24:47.351Z"}
+{"level":"info","message":"GET CACHE SPACE #cd2926119db111e3a77e064cf8c38b5b","timestamp":"2014-08-30T12:26:45.437Z"}

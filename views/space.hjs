@@ -67,12 +67,10 @@
             </div>
             <div class="space-info box">
                 <div class="slider-container" style="width:100%;visibility: hidden;">
-                    <div class="shadow_overlay">
-
-                    </div>
+                    <!--<div class="shadow_overlay"></div>-->
                     <ul class="slides">
                         {{#space.images}}
-                            <li><img src="{{.}}" alt="" /></li>
+                            <li><a href="#"><img src="{{.}}" alt="" /></a></li>
 
                         {{/space.images}}
                     </ul>
