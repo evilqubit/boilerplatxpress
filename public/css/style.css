@@ -699,7 +699,7 @@ ul.slides li a
 ul.slides img
 {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
   max-height: 100%;
   -webkit-transform: scale(2.4);
   transform: scale(2.4);
@@ -710,8 +710,8 @@ ul.slides img
 
 ul.slides a:hover img, a:focus img
 {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(2.4);
+  transform: scale(2.4);
 }
 
 .slider-container{
