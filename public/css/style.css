@@ -344,7 +344,7 @@ a:hover{
 }
 .main-container{
     width: 100%;
-    margin: 90px auto;
+    margin: 90px auto 24px auto;
 }
 .box{
     float:left;
@@ -944,4 +944,4 @@ and (max-width : 470px) {
       transform: scale(1.2);
   }
 }
-#map-canvas { height: 100% }
+#map-canvas { height: 50% }
