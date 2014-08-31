@@ -163,3 +163,23 @@
 {"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-08-31T22:03:22.834Z"}
 {"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T22:03:23.293Z"}
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T22:03:52.459Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-08-31T22:05:12.114Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:08:56.798Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:09:26.130Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:10:19.434Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:10:51.125Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:12:34.967Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:13:04.251Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:13:10.646Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:13:40.745Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:15:33.608Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:15:48.716Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:16:18.625Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:16:48.669Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:17:17.991Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:18:33.747Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:19:03.041Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:29:24.399Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:29:54.786Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:31:04.429Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:31:33.703Z"}

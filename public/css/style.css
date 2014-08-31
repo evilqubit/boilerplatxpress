@@ -270,61 +270,61 @@ a:hover{
     padding: 0 20px;
     outline: none;
 }
-.landing_sm_menu {
+.my_landing_sm_menu {
     list-style: none;
     text-align: 0;
     margin: 50px 0 30px 0;
     padding: 0;
     text-align: center;
 }
-.landing_sm_menu li {
+.my_landing_sm_menu li {
     display: inline-block;
     float: none;
     margin-left:6px;
 }
-.landing_sm_menu li a{
+.my_landing_sm_menu li a{
     padding: 12px 21px;
     -moz-transition: all 0.2s ease;
     -webkit-transition: -webkit-transform 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.landing_sm_menu li a.landing_small_facebook {
+.my_landing_sm_menu li a.landing_small_facebook {
     background: url('../images/social-sprite.png') 126 0;
 }
-.landing_sm_menu li a.landing_small_twitter {
+.my_landing_sm_menu li a.landing_small_twitter {
     background: url('../images/social-sprite.png') 168 0;
 }
-.landing_sm_menu li a.landing_small_linkedin {
+.my_landing_sm_menu li a.landing_small_linkedin {
     background: url('../images/social-sprite.png') 84 0;
 }
-.landing_sm_menu li a.landing_small_googleplus {
+.my_landing_sm_menu li a.landing_small_googleplus {
     background: url('../images/social-sprite.png') 0 0;
 }
-.landing_sm_menu li a.landing_small_pinterest {
+.my_landing_sm_menu li a.landing_small_pinterest {
     background: url('../images/social-sprite.png') 42 0;
 }
-.landing_sm_menu li a:hover{
+.my_landing_sm_menu li a:hover{
     background-position-y:44;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-    .landing_sm_menu li a.landing_small_facebook {
+    .my_landing_sm_menu li a.landing_small_facebook {
         background-image: url(../images/social-sprite@2x.png);
         background-size: 210 88px;
     }
-    .landing_sm_menu li a.landing_small_twitter {
+    .my_landing_sm_menu li a.landing_small_twitter {
         background-image: url(../images/social-sprite@2x.png);
         background-size: 210 88px;
     }
-    .landing_sm_menu li a.landing_small_linkedin {
+    .my_landing_sm_menu li a.landing_small_linkedin {
         background-image: url(../images/social-sprite@2x.png);
         background-size: 210 88px;
     }
-    .landing_sm_menu li a.landing_small_googleplus {
+    .my_landing_sm_menu li a.landing_small_googleplus {
         background-image: url(../images/social-sprite@2x.png);
         background-size: 210 88px;
     }
-    .landing_sm_menu li a.landing_small_pinterest {
+    .my_landing_sm_menu li a.landing_small_pinterest {
         background-image: url(../images/social-sprite@2x.png);
         background-size: 210 88px;
     }
@@ -344,7 +344,7 @@ a:hover{
 }
 .main-container{
     width: 100%;
-    margin: 90px auto 24px auto;
+    margin: 90px auto 24px auto
 }
 .box{
     float:left;
@@ -516,6 +516,7 @@ p.description{
 
 .ps-hr-big{
     width:100%;
+    margin-bottom: -1px;
     height:12px;
     background:#e6e7e8;
 }
@@ -668,7 +669,7 @@ ul.slides
   width: 100%;
   padding: 0;
   margin: 0;
-  margin-bottom: -34px;
+  margin-bottom: -50px;
   list-style-type: none;
 }
 
