@@ -194,3 +194,18 @@
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:43:06.091Z"}
 {"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:43:50.212Z"}
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:44:19.493Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T13:42:01.765Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T13:43:24.976Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T13:43:34.458Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T13:43:42.579Z"}
+{"level":"info","message":"SEARCH TITLE: /(?:)/i","timestamp":"2014-09-01T13:43:46.542Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T13:43:48.122Z"}
+{"level":"info","message":"SEARCH TITLE: /(?:)/i","timestamp":"2014-09-01T13:43:49.178Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T13:43:51.005Z"}
+{"level":"info","message":"SEARCH TITLE: /(?:)/i","timestamp":"2014-09-01T13:43:56.219Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T13:44:18.718Z"}
+{"level":"info","message":"SEARCH TITLE: /(?:)/i","timestamp":"2014-09-01T13:44:20.313Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T13:46:22.662Z"}
+{"level":"info","message":"SEARCH TITLE: /(?:)/i","timestamp":"2014-09-01T13:46:23.240Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T13:46:45.625Z"}
+{"level":"info","message":"SEARCH TITLE: /(?:)/i","timestamp":"2014-09-01T13:46:46.128Z"}
