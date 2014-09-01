@@ -183,3 +183,14 @@
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:29:54.786Z"}
 {"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:31:04.429Z"}
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:31:33.703Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:34:57.394Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:35:25.707Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:35:55.250Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:36:51.771Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:37:21.056Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:39:32.050Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:40:01.863Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:42:36.577Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:43:06.091Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-08-31T23:43:50.212Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-08-31T23:44:19.493Z"}
