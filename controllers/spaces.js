@@ -144,12 +144,13 @@ exports.delete = function(req, res){
 };
 
 exports.search = function(req, res){
-
-    var ip = req.ip;
+    var ip = "127.0.0.1";
+    if(typeof req.headers['x-forwarded-for'] !== 'undefined'){
+              var ip = req.headers['x-forwarded-for'];
+    }
     var ip_arr = ip.split(".");
-    res.send(req.headers);
-    console.log("\n"+ip_tst);
-    //if(ip[0] === "10" && ip[1] === "54" && ip[2] === "199") {
+    //108.168.236.242
+    if(ip[0] === "108" && ip[1] === "168") {
         var skip = req.query.skip || 0;
         var limit = req.query.limit || 200;
         var regex = new RegExp(req.query.q, 'i');
@@ -160,11 +161,11 @@ exports.search = function(req, res){
                 return res.send(q);
             }
         });
-    //}
-    //else {
-            //winston.error("RESTRICTED SEARCH fROM: " + ip);
-            //return res.redirect("http://www.peerspace.com/4.04.4004");
-    //}
+    }
+    else {
+            winston.error("RESTRICTED SEARCH fROM: " + ip);
+            return res.redirect("http://www.peerspace.com/4.04.4004");
+    }
 }
 
 exports.geo = function(req, res){

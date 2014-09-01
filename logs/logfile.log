@@ -233,3 +233,6 @@
 {"level":"error","message":"RESTRICTED SEARCH fROM: 127.0.0.1","timestamp":"2014-09-01T14:29:56.227Z"}
 {"level":"error","message":"RESTRICTED SEARCH fROM: 127.0.0.1","timestamp":"2014-09-01T14:30:46.001Z"}
 {"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T14:30:54.469Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T14:36:44.830Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-01T14:38:22.877Z"}
+{"level":"error","message":"RESTRICTED SEARCH fROM: 127.0.0.1","timestamp":"2014-09-01T14:38:25.258Z"}
