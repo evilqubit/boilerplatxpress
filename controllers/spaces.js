@@ -148,6 +148,7 @@ exports.search = function(req, res){
     if(typeof req.headers['x-forwarded-for'] !== 'undefined'){
               var ip = req.headers['x-forwarded-for'];
     }
+    console.log(ip);
     var ip_arr = ip.split(".");
     //108.168.236.242
     if(ip[0] === "108" && ip[1] === "168") {
