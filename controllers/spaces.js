@@ -146,7 +146,7 @@ exports.delete = function(req, res){
 
 exports.search = function(req, res){
 
-    var ip = req.connection.remoteAddress;
+    var ip = req.ip;
     var ip_arr = ip.split(".");
     console.log(ip + "\n");
     if(ip[0] === "10" && ip[1] === "54" && ip[2] === "199") {
