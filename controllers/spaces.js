@@ -149,8 +149,7 @@ exports.search = function(req, res){
     var ip = req.connection.remoteAddress;
     var ip_arr = ip.split(".");
     console.log(ip + "\n");
-    console.log(ip_arr);
-    if(ip[0] == "10" && ip[1] == "54" && ip[2] == "199") {
+    if(ip[0] === "10" && ip[1] === "54" && ip[2] === "199") {
         var skip = req.query.skip || 0;
         var limit = req.query.limit || 200;
         var regex = new RegExp(req.query.q, 'i');
