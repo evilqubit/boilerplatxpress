@@ -5,7 +5,6 @@ var publicSpaces = path.resolve(__dirname + "/../" + "public/spaces/");
 var Space = mongoose.model('Space');
 var winston = require('winston');
 
-
 exports.create = function(req, res){
     var space = new Space(req.body);
     space.save(function(err){
@@ -148,7 +147,10 @@ exports.search = function(req, res){
 
     var ip = req.ip;
     var ip_arr = ip.split(".");
-    console.log(ip + "\n");
+    var origin = req.get('origin');
+    console.log(origin);
+    var userIP = req.socket.remoteAddress;
+    console.log("\n"+userIP);
     if(ip[0] === "10" && ip[1] === "54" && ip[2] === "199") {
         var skip = req.query.skip || 0;
         var limit = req.query.limit || 200;
