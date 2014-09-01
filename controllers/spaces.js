@@ -145,17 +145,27 @@ exports.delete = function(req, res){
 };
 
 exports.search = function(req, res){
-    console.log(req.connection.remoteAddress);
-    var skip = req.query.skip || 0;
-    var limit = req.query.limit || 200;
-    var regex = new RegExp(req.query.q, 'i');
-    return Space.find({title: regex},null,{ skip: skip, limit: limit }, function(err,q){
-        if(err) winston.error(err);
-        else{
-            winston.info("SEARCH TITLE: " + regex);
-            return res.send(q);
-        }
-    });
+
+    var ip = req.connection.remoteAddress;
+    var ip_arr = ip.split(".");
+    console.log(ip + "\n");
+    console.log(ip_arr);
+    if(ip[0] == "10" && ip[1] == "54" && ip[2] == "199") {
+        var skip = req.query.skip || 0;
+        var limit = req.query.limit || 200;
+        var regex = new RegExp(req.query.q, 'i');
+        return Space.find({title: regex},null,{ skip: skip, limit: limit }, function(err,q){
+            if(err) winston.error(err);
+            else{
+                winston.info("SEARCH TITLE: " + regex);
+                return res.send(q);
+            }
+        });
+    }
+    else {
+            winston.error("RESTRICTED SEARCH fROM: " + ip);
+            return res.redirect("http://www.peerspace.com/4.04.4004");
+    }
 }
 
 exports.geo = function(req, res){
