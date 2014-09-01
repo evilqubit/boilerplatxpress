@@ -151,7 +151,7 @@ exports.search = function(req, res){
     console.log(ip);
     var ip_arr = ip.split(".");
     //108.168.236.242
-    if(ip[0] === "108" && ip[1] === "168") {
+    if(ip[0] == 108 && ip[1] == 168) {
         var skip = req.query.skip || 0;
         var limit = req.query.limit || 200;
         var regex = new RegExp(req.query.q, 'i');
