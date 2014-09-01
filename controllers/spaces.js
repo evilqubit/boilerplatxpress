@@ -147,11 +147,9 @@ exports.search = function(req, res){
 
     var ip = req.ip;
     var ip_arr = ip.split(".");
-    var origin = req.get('origin');
-    console.log(origin);
-    var userIP = req.socket.remoteAddress;
-    console.log("\n"+userIP);
-    if(ip[0] === "10" && ip[1] === "54" && ip[2] === "199") {
+    res.send(req.headers);
+    console.log("\n"+ip_tst);
+    //if(ip[0] === "10" && ip[1] === "54" && ip[2] === "199") {
         var skip = req.query.skip || 0;
         var limit = req.query.limit || 200;
         var regex = new RegExp(req.query.q, 'i');
@@ -162,11 +160,11 @@ exports.search = function(req, res){
                 return res.send(q);
             }
         });
-    }
-    else {
-            winston.error("RESTRICTED SEARCH fROM: " + ip);
-            return res.redirect("http://www.peerspace.com/4.04.4004");
-    }
+    //}
+    //else {
+            //winston.error("RESTRICTED SEARCH fROM: " + ip);
+            //return res.redirect("http://www.peerspace.com/4.04.4004");
+    //}
 }
 
 exports.geo = function(req, res){
