@@ -10,6 +10,7 @@
     "mongoose": "~3.8.14",
     "request": "~2.40.0",
     "hjs": "0.0.6",
-    "winston": "~0.7.3"
+    "winston": "~0.7.3",
+    "newrelic": "~1.10.3"
   }
 }
