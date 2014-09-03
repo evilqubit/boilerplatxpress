@@ -3,10 +3,8 @@
  * PeerSpace REST API engine.
  */
 
-/**
-New Relic
-*/
-  if (process.env.NODE_ENV === 'prod') var newrelic = require ('newrelic');
+/*New Relic*/
+if (process.env.NODE_ENV === 'prod') var newrelic = require ('newrelic');
 
 /*App config*/
 
