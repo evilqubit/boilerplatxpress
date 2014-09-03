@@ -31,7 +31,7 @@ fs.readdirSync(models_path).forEach(function (file) {
   if (~file.indexOf('.js')) require(models_path + '/' + file)
 })
 
-var app = express()
+//var app = express()
 // express settings
 require('./config/express')(app, config)
 
