@@ -255,3 +255,8 @@
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-03T11:58:23.933Z"}
 {"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-03T12:00:13.723Z"}
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-03T12:00:27.639Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-03T12:03:00.109Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-03T12:03:24.955Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-03T12:03:33.353Z"}
+{"level":"info","message":"SEARCH TITLE: /theater/i","timestamp":"2014-09-03T12:03:39.111Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-03T12:03:47.824Z"}

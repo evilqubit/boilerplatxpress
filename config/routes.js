@@ -12,8 +12,8 @@ module.exports = function(app){
     //app.put('/api/spaces/:id', spaces.update);
     //app.delete('/api/spaces/:id',spaces.delete);
 
-    app.get('/api/spaces',spaces.readAll);
-    app.get('/api/spaces/search/',mid.restrictToIP,spaces.search);
+    app.get('/all',mid.restrictToIP,spaces.readAll);
+    app.get('/search',mid.restrictToIP,spaces.search);
     app.get('/:uuid',spaces.singleReadLongURI);
     app.get('/api/geo',spaces.geo);
 
