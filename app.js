@@ -19,6 +19,7 @@ winston.remove(winston.transports.Console);
 
 var app = express();
 if (app_env === 'prod') app.locals.newrelic = newrelic;
+console.log(newrelic);
 var env = app_env || 'dev'
 var config = require('./config/config')[env]
 
