@@ -1,6 +1,14 @@
 var express = require('express');
 
+var app_env = process.env.NODE_ENV;
+/*New Relic*/
+if (app_env === 'prod') var newrelic = require ('newrelic');
+
 module.exports = function (app, config) {
+    app.use(function(req, res, next){
+        if (app_env === 'prod') res.newrelic = newrelic;
+            next()
+    })
     app.set('views', config.root + '/views');
     app.set('view engine', 'hjs');
     app.use(express.compress());
