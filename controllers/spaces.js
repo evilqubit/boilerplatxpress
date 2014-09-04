@@ -56,7 +56,7 @@ exports.singleReadLongURI = function(req, res){
   var uuid = req.param('uuid');
   var uuid_arr = uuid.split("_");
   var id = uuid_arr[uuid_arr.length-1];
-  console.log(id);
+  console.log(res.locals.newrelic);
 
   Space.find({_id:id}, function(err, space){
       if(err) winston.error(err);
@@ -78,7 +78,6 @@ exports.singleRead = function(req, res){
 
   var id = req.param('id');
   var type = req.query.t || "html";
-  console.log(res.locals.newrelic);
   Space.find({_id:id}, function(err, space){
       if(err) winston.error(err);
 
