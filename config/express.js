@@ -5,10 +5,16 @@ var app_env = process.env.NODE_ENV;
 if (app_env === 'prod') var newrelic = require ('newrelic');
 
 module.exports = function (app, config) {
-    app.use(function(req, res, next){
-        if (app_env === 'prod') res.newrelic = newrelic;
-            next()
-    })
+
+    if(app_env === 'prod'){
+        app.use(function(req, res, next){
+            if (app_env === 'prod') res.newrelic = newrelic;
+                next()
+        })
+        console.log(newrelic.getBrowserTimingHeader());
+    }
+
+
     app.set('views', config.root + '/views');
     app.set('view engine', 'hjs');
     app.use(express.compress());
