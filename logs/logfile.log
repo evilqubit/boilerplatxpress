@@ -291,3 +291,27 @@
 {"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-04T14:31:34.292Z"}
 {"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T14:31:35.733Z"}
 {"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-04T14:49:35.309Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-04T14:58:47.100Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:02:13.173Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:02:38.834Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:07:57.615Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:08:13.053Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:09:16.727Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:09:30.541Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:10:22.491Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:10:37.744Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:11:36.360Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:11:57.659Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:14:41.641Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:15:15.194Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:15:24.995Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:22:46.742Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:23:00.712Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:26:41.615Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:26:56.750Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:30:43.225Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:30:56.674Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:31:03.707Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:31:23.677Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:38:35.846Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:39:01.142Z"}

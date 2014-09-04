@@ -527,10 +527,7 @@ and (max-width : 768px) {
 @media only screen
 and (max-width : 604px) {
     .bottom-info {
-        width: 100%;
-        padding: 0;
-        position: absolute;
-        top: 530px;
+
     }
     .small-box {
         float: none;
@@ -565,8 +562,13 @@ and (max-width : 604px) {
         float: left;
     }
     .main-container .user-info {
-        width: 33%;
-        margin:-140px 50px 0 0;
+        width: 32%;
+        position: relative;
+        z-index: 333;
+        margin: 0;
+        bottom: 0;
+        float: right;
+        margin-top: -180px;
     }
     .prf-title:first-child{
         display:none;
@@ -576,18 +578,26 @@ and (max-width : 604px) {
         margin-top:0;
     }
     .user-aman ul {
-        margin: -26px 95px;
-        width: 87%;
+        margin: -23px 95px;
+        width: 70%;
     }
 }
 @media only screen
 and (max-width : 470px) {
-    .main-container .user-info {
-        margin: 0;
-        width: 33%;
+    .list-info{
+        margin: 77px 10px 0 0;
+        padding: 0 0 10px 0;
+        width: 86%;
+        margin-left: 20px;
+    }
+    .small-box {
+        float: none;
+        margin-bottom: 80px;
+        width: 96%;
         position: absolute;
-        top: 720px;
-        right: 8;
+    }
+    .main-container .user-info{
+
     }
     ul.slides img
     {
