@@ -18,7 +18,12 @@ winston.add(winston.transports.File, { filename: 'logs/logfile.log' });
 winston.remove(winston.transports.Console);
 
 var app = express();
+
+app.use(function(req, res, next){
 if (app_env === 'prod') res.locals.newrelic = newrelic;
+next()
+})
+
 
 var env = app_env || 'dev'
 var config = require('./config/config')[env]
