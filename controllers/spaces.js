@@ -56,14 +56,13 @@ exports.singleReadLongURI = function(req, res){
   var uuid = req.param('uuid');
   var uuid_arr = uuid.split("_");
   var id = uuid_arr[uuid_arr.length-1];
-  console.log(res.locals.newrelic);
 
   Space.find({_id:id}, function(err, space){
       if(err) winston.error(err);
 
       else{
           if(typeof space[0] !== 'undefined'){
-                    return renderSpace(res,{space:space[0]});
+                    return renderSpace(res,{space:space[0], newrelic: req.newrelic});
           }
           else {
               winston.error("CANT GET SPACE #" + id);

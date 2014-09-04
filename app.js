@@ -20,7 +20,7 @@ winston.remove(winston.transports.Console);
 var app = express();
 
 app.use(function(req, res, next){
-if (app_env === 'prod') res.locals.newrelic = newrelic;
+if (app_env === 'prod') req.newrelic = newrelic;
 next()
 })
 
