@@ -528,8 +528,9 @@ and (max-width : 768px) {
 and (max-width : 604px) {
     .bottom-info {
         width: 100%;
-        margin: -60px auto;
         padding: 0;
+        position: absolute;
+        top: 530px;
     }
     .small-box {
         float: none;
@@ -582,8 +583,11 @@ and (max-width : 604px) {
 @media only screen
 and (max-width : 470px) {
     .main-container .user-info {
-        margin:-170px 13px 0 0;
-        width:33%;
+        margin: 0;
+        width: 33%;
+        position: absolute;
+        top: 720px;
+        right: 8;
     }
     ul.slides img
     {
