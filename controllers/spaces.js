@@ -52,7 +52,7 @@ renderSpace = function(res, spaces){
 }
 
 exports.singleReadLongURI = function(req, res){
-    if(typeof req.newrelic !== 'undefined') console.log(req.newrelic);
+    if(typeof res.locals !== 'undefined') console.log(res.locals);
     else console.log('newrelic not working');
   var uuid = req.param('uuid');
   var uuid_arr = uuid.split("_");
