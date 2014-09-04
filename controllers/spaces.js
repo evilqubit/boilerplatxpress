@@ -78,7 +78,7 @@ exports.singleRead = function(req, res){
 
   var id = req.param('id');
   var type = req.query.t || "html";
-
+  console.log(res.locals.newrelic);
   Space.find({_id:id}, function(err, space){
       if(err) winston.error(err);
 

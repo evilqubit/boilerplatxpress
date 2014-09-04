@@ -2,7 +2,7 @@
     <head>
 
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
-      {{locals.newrelic.getBrowserTimingHeader()}}
+      {{newrelic.getBrowserTimingHeader()}}
         <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
         <script>
           WebFont.load({
