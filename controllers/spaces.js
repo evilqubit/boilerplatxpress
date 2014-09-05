@@ -5,6 +5,14 @@ var publicSpaces = path.resolve(__dirname + "/../" + "public/spaces/");
 var Space = mongoose.model('Space');
 var winston = require('winston');
 
+
+
+exports.newrelic = function(req,res){
+
+  Console.log(newrelic.getBrowserTimingHeader());
+};
+
+
 exports.create = function(req, res){
     var space = new Space(req.body);
     space.save(function(err){
