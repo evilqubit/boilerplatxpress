@@ -457,8 +457,8 @@ ul.slides a:hover img, a:focus img
 and (min-width : 1300px) {
     ul.slides img
     {
-      webkit-transform: scale(3.2);
-      transform: scale(3.2);
+      webkit-transform: scale(3.3);
+      transform: scale(3.3);
     }
 }
 @media only screen
