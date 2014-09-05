@@ -1,5 +1,5 @@
 {
-  "name": "PeerSpace-REST-API",
+  "name": "ps-listing",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,5 +12,12 @@
     "winston": "~0.7.3",
     "newrelic": "~1.10.3",
     "hogan-express": "~0.5.2"
-  }
+},
+    "devDependencies": {
+        "grunt-contrib-concat": "~0.4.0",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt": "~0.4.4",
+        "grunt-contrib-uglify": "~0.4.0",
+        "grunt-contrib-cssmin": "~0.9.0"
+    }
 }
