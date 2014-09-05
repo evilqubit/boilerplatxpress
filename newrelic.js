@@ -20,8 +20,5 @@ exports.config = {
      * production applications.
      */
     level : 'info'
-    },
-    browser_monitoring : {
-	  enable : true
-	}
+    }
 };
