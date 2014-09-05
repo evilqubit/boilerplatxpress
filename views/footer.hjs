@@ -1,0 +1,38 @@
+<!-- Le Footer-->
+<div class="landing_download_app_section">
+    <div class="container landing_fix2">
+        <h2>Check out our Spaces and reserve yours today</h2>
+        <span><a onclick="ga('send', 'event', 'Download Interest', 'click', 'app-store-button-bottom-guest');" href="http://www.peerspace.com#top"></a></span>
+    </div>
+</div>
+<div class="landing_footer">
+    <div class="container ipad_footer_container_fix">
+        <ul class="footer_menu_new">
+            <li><a href="http://www.peerspace.com/about/">About Us</a></li>
+            <li><a href="http://www.peerspace.com/guest/">Be a Guest</a></li>
+            <li><a href="http://www.peerspace.com/host/">Be a Host</a></li>
+            <li><a href="http://www.peerspace.com/blog/">Blog</a></li>
+            <li><a href="http://support.peerspace.com/hc/en-us">Support</a></li>
+            <li><a href="http://www.peerspace.com/terms/">Terms &amp; Conditions</a></li>
+            <li><a href="http://www.peerspace.com/privacy/">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <ul class="my_landing_sm_menu">
+            <li><a onclick="ga('send', 'event', 'Social', 'click', 'fb-button');" href="https://www.facebook.com/peerspace/" class="landing_small_facebook" target="_blank"></a></li>
+            <li><a onclick="ga('send', 'event', 'Social', 'click', 'twitter-button');" href="https://twitter.com/PeerSpaceApp" class="landing_small_twitter" target="_blank"></a></li>
+            <li><a onclick="ga('send', 'event', 'Social', 'click', 'li-button');" href="https://www.linkedin.com/company/peerspace" class="landing_small_linkedin" target="_blank"></a></li>
+            <li><a onclick="ga('send', 'event', 'Social', 'click', 'gplus-button');" href="https://plus.google.com/101016984360991256601" class="landing_small_googleplus" target="_blank"></a></li>
+            <li><a onclick="ga('send', 'event', 'Social', 'click', 'pinterest-button');" href="http://www.pinterest.com/peerspaceapp/" class="landing_small_pinterest" target="_blank"></a></li>
+        </ul>
+        <p class="landing_copyright">Copyright 2014 PeerSpace. All Rights Reserved.</p>
+</div>
+<!-- End of Le Footer-->
+
+<!-- Les JavaScripts -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="/spaces/js/jquery.flexslider.js" charset="utf-8"></script>
+<script type="text/javascript" src="/spaces/js/main.js" charset="utf-8"></script>
+
+</body>
+</html>

@@ -348,3 +348,22 @@
 {"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T09:05:58.997Z"}
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-05T09:06:42.731Z"}
 {"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T09:12:10.913Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-05T09:12:40.790Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T14:04:11.732Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T14:05:10.081Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T14:05:30.308Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T14:06:19.653Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T14:06:31.618Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T14:14:00.986Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T14:14:10.090Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T14:15:03.136Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T14:15:15.256Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T14:16:11.016Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T14:16:14.011Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T14:34:34.264Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T14:34:36.693Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T14:34:45.372Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T14:41:49.491Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T14:50:08.618Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T14:50:56.560Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-05T14:51:09.910Z"}

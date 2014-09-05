@@ -8,6 +8,9 @@ module.exports = function (app, config) {
 
     app.set('views', config.root + '/views');
     app.set('view engine', 'hjs');
+    app.set('partials', {footer: 'footer',header: 'header'})
+    app.enable('view cache');
+    app.engine('hjs', require('hogan-express'));
     app.use(express.compress());
     app.use(config.sta, express.static(config.root + '/public'));
     app.set('port', process.env.PORT || 3000);
