@@ -2,7 +2,7 @@
 <div class="landing_download_app_section">
     <div class="container landing_fix2">
         <h2>Check out our Spaces and reserve yours today</h2>
-        <span><a onclick="ga('send', 'event', 'Download Interest', 'click', 'app-store-button-bottom-guest');" href="http://www.peerspace.com#top"></a></span>
+        <span><a onclick="ga('send', 'event', 'Download Interest', 'click', 'app-store-button-bottom-guest');" href="http://deeplink.me/http://www.peerspace.com#top"></a></span>
     </div>
 </div>
 <div class="landing_footer">
