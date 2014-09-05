@@ -9,7 +9,7 @@ var winston = require('winston');
 
 exports.newrelic = function(req,res){
 
-  Console.log(newrelic.getBrowserTimingHeader());
+  console.log(newrelic.getBrowserTimingHeader());
 };
 
 
