@@ -7,11 +7,6 @@ var winston = require('winston');
 
 
 
-exports.newrelic = function(req,res){
-
-  console.log(newrelic.getBrowserTimingHeader());
-};
-
 
 exports.create = function(req, res){
     var space = new Space(req.body);
