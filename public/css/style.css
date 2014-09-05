@@ -454,6 +454,14 @@ ul.slides a:hover img, a:focus img
     width: 80px;
 }
 @media only screen
+and (min-width : 1300px) {
+    ul.slides img
+    {
+      webkit-transform: scale(3.2);
+      transform: scale(3.2);
+    }
+}
+@media only screen
 and (max-width : 1024px) {
     .main-header {
         margin: 64px 26px 24px 7px;
