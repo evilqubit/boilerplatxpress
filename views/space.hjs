@@ -27,8 +27,8 @@
                 <li>Neighborhood: <span class="high"><a id="neighborhood">{{space.neighborhood}}</a></span></li>
             </ul>
             <div class="small-box">
-                <button onclick="window.location='http://www.peerspace.com';" class="btn-space">Book Now</button>
-                <button onclick="window.location='http://www.peerspace.com';"  class="btn-space">Message Host</button>
+                <button onclick="window.location='http://deeplink.me/http://www.peerspace.com';" class="btn-space">Book Now</button>
+                <button onclick="window.location='http://deeplink.me/http://www.peerspace.com';"  class="btn-space">Message Host</button>
             </div>
 
             <div class="clearfix"></div>
