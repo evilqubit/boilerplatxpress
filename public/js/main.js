@@ -19,15 +19,17 @@ jQuery(document).ready(function($){
     //Nav-Bar shadow
     var nav = $('.landing_fixed_menu'); // Change to nav div
     var nav_class = 'shadow-nav'; // Change to class name
-    var threshold = 100; // Change to pixels scrolled
-
+    var threshold = 150; // Change to pixels scrolled
+    var get_app = $(".landing_get_app");
     $(window).scroll(function () {
         var distance = $(this).scrollTop();
         if (distance > threshold) { // If scrolled past threshold
             nav.addClass(nav_class); // Add class to nav
+            get_app.show();
         } else { // If user scrolls back to top
             if (nav.hasClass(nav_class)) { // And if class has been added
                 nav.removeClass(nav_class); // Remove it
+                get_app.hide();
             }
         }
     });
@@ -95,10 +97,6 @@ jQuery(document).ready(function($){
                 });
                 return json;
             })();
-
-
-
-
             //loop between each of the json elements
             for (var i = 0, length = json.length; i < length; i++) {
                 var data = json[i],
