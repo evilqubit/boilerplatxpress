@@ -315,3 +315,14 @@
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:31:23.677Z"}
 {"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:38:35.846Z"}
 {"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:39:01.142Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-04T16:45:01.054Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-04T16:45:02.023Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-04T16:45:15.673Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-05T08:22:39.310Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T08:22:39.946Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-05T08:24:18.569Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T08:26:46.544Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T08:26:56.085Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T08:27:10.397Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-05T08:27:44.468Z"}
+{"level":"info","message":"READ ALL SPACES","timestamp":"2014-09-05T08:29:27.963Z"}
