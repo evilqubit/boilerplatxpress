@@ -1,10 +1,10 @@
-
+newrelic = require ('newrelic');
 /**
  * PeerSpace REST API engine.
  */
 var app_env = process.env.NODE_ENV;
 /*New Relic*/
-if (app_env === 'prod') var newrelic = require ('newrelic');
+
 
 /*App config*/
 
@@ -18,7 +18,7 @@ winston.add(winston.transports.File, { filename: 'logs/logfile.log' });
 winston.remove(winston.transports.Console);
 
 var app = express();
-if (app_env === 'prod') app.locals.newrelic = newrelic;
+if (app_env === 'prod')  module.exports.agent_enabled = true;
 
 var env = app_env || 'dev'
 var config = require('./config/config')[env]
