@@ -1,4 +1,4 @@
-newrelic = require ('newrelic');
+require ('newrelic');
 /**
  * PeerSpace REST API engine.
  */
