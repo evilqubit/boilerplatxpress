@@ -341,7 +341,8 @@ ul.slides li a
   display: block;
   width: 100%;
   overflow: hidden;
-  height: 400px;
+  height: auto;
+  max-height:400px;
 }
 
 ul.slides img
@@ -366,7 +367,9 @@ ul.slides a:hover img, a:focus img
 }
 
 .slider-container{
-    height:400px;
+    height: auto;
+    min-height:300px;
+    margin-bottom: 60px;
 }
 .slider-container.flex-control-paging .flex-active {
     position: absolute;
@@ -457,8 +460,8 @@ ul.slides a:hover img, a:focus img
 and (min-width : 1300px) {
     ul.slides img
     {
-      webkit-transform: scale(3.3);
-      transform: scale(3.3);
+      webkit-transform: scale(3.2);
+      transform: scale(3.2);
     }
 }
 @media only screen
@@ -494,24 +497,39 @@ and (max-width : 768px) {
         width: 136px;
         font-size: 16px;
     }
-    .main-container .user-info {
-        width: 22%;
-        border: none;
-        text-align: center;
-        float: right;
-        margin: -160px 50px 0 0;
+    .main-container .user-info{
+        width: 100%;
+        position: relative;
+        z-index: 333;
+        margin: 0;
+        float: none;
+        margin-top: 0;
+        border:none;
+        text-align: left;
     }
-    .main-container .user-info .prf-image {
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        padding: 4px;
-        border: 2px solid #5dc1b3;
+    .main-container .user-info .prf-image{
+        float: left;
+        margin-left: 16px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        height: 90px;
+        width: 90px;
+
+    }
+    .prf-title{
+        margin: 12px 0px 8px 14px;
+    }
+    .prf-name{
+        float: left;
+        width: 80%;
+        text-align: left;
+        margin: 20px 0 6px;
+    }
+    .prf-raiting{
+        float: left;
     }
     p.description {
-        width: 60%;
+        width: 100%;
     }
     .prf-bio{
         display:none;
@@ -532,8 +550,12 @@ and (max-width : 768px) {
         margin-top: -13px;
     }
     .user-aman ul{
-        margin: -26px 95px;
+        margin: -23px 95px;
         width: 87%;
+    }
+    .main-container .user-aman{
+        margin-top:12px;
+        width: 90%;
     }
 }
 @media only screen
@@ -564,32 +586,13 @@ and (max-width : 604px) {
         margin: -20px 0px 20px 0px;
         text-align: center;
     }
-    p.description{
-        width: 60%;
-        font-size: 14px;
-        line-height: 1.2;
-        margin-left: 20px;
-        float: left;
-    }
-    .main-container .user-info {
-        width: 32%;
-        position: relative;
-        z-index: 333;
-        margin: 0;
-        bottom: 0;
-        float: right;
-        margin-top: -180px;
-    }
-    .prf-title:first-child{
-        display:none;
-    }
     .user-aman .prf-title{
         display:block;
         margin-top:0;
     }
-    .user-aman ul {
-        margin: -23px 95px;
-        width: 70%;
+
+    .prf-name{
+        width:70%;
     }
 }
 @media only screen
@@ -600,19 +603,17 @@ and (max-width : 470px) {
         width: 86%;
         margin-left: 20px;
     }
-    .small-box {
-        float: none;
-        margin-bottom: 80px;
-        width: 96%;
-        position: absolute;
+    .prf-name{
+        width:60%;
     }
-    .main-container .user-info{
-
+    .user-aman ul {
+        margin: -23px 95px;
+        width: 70%;
     }
     ul.slides img
     {
-      webkit-transform: scale(1.2);
-      transform: scale(1.2);
+      webkit-transform: scale(1);
+      transform: scale(1);
     }
   .ipad_footer_container_fix{
       clear:both;
