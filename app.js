@@ -1,4 +1,4 @@
-require ('newrelic');
+var newrelic=require ('newrelic');
 /**
  * PeerSpace REST API engine.
  */
@@ -18,7 +18,13 @@ winston.add(winston.transports.File, { filename: '/home/webdev/psAPI/SpacesAPI/l
 winston.remove(winston.transports.Console);
 
 var app = express();
-if (app_env === 'prod')  module.exports.agent_enabled = true;
+if (app_env === 'prod')  {
+   module.exports.agent_enabled = true;
+   app.locals.newrelic = newrelic
+} else {
+   module.exports.agent_enabled = false;
+ }
+                        
 
 var env = app_env || 'dev'
 var config = require('./config/config')[env]
