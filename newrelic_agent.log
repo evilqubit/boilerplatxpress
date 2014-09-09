@@ -10,3 +10,9 @@
 {"name":"newrelic","hostname":"MacDonalds","pid":25991,"component":"express","level":40,"msg":"Unrecognized version NaN of Express detected; not instrumenting","time":"2014-09-09T17:02:55.113Z","v":0}
 {"name":"newrelic","hostname":"MacDonalds","pid":25991,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/742294/applications/5089800","time":"2014-09-09T17:03:04.080Z","v":0}
 {"name":"newrelic","hostname":"MacDonalds","pid":25991,"component":"collector_api","level":30,"msg":"Connected to collector-136.newrelic.com:443 with agent run ID 783931308.","time":"2014-09-09T17:03:04.081Z","v":0}
+{"name":"newrelic","hostname":"MacDonalds","pid":26138,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-09-09T17:14:23.110Z","v":0}
+{"name":"newrelic","hostname":"MacDonalds","pid":26138,"component":"express","level":40,"msg":"Unrecognized version NaN of Express detected; not instrumenting","time":"2014-09-09T17:14:23.513Z","v":0}
+{"name":"newrelic","hostname":"MacDonalds","pid":26138,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/742294/applications/5089800","time":"2014-09-09T17:14:30.262Z","v":0}
+{"name":"newrelic","hostname":"MacDonalds","pid":26138,"component":"collector_api","level":30,"msg":"Connected to collector-136.newrelic.com:443 with agent run ID 783951906.","time":"2014-09-09T17:14:30.264Z","v":0}
+{"name":"newrelic","hostname":"MacDonalds","pid":26598,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-09-09T17:22:07.070Z","v":0}
+{"name":"newrelic","hostname":"MacDonalds","pid":26598,"component":"express","level":40,"msg":"Unrecognized version NaN of Express detected; not instrumenting","time":"2014-09-09T17:22:07.320Z","v":0}

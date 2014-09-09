@@ -7,14 +7,14 @@ module.exports = function(app){
     });
 
     //Depreciated
-    //app.post('/api/spaces',spaces.create);
     //app.get('/api/spaces/:id',spaces.singleRead);
-    //app.put('/api/spaces/:id', spaces.update);
     //app.delete('/api/spaces/:id',spaces.delete);
 
     app.get('/all',mid.restrictToIP,spaces.readAll);
     app.get('/search',mid.restrictToIP,spaces.search);
     app.get('/:uuid',spaces.singleReadLongURI);
     app.get('/api/geo',spaces.geo);
+    app.post('/api/spaces',mid.restrictToIP,spaces.create);
+    app.put('/api/spaces/:id',mid.restrictToIP, spaces.update);
 
 }
