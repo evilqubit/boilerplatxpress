@@ -24,11 +24,11 @@
             <ul class="list-info">
                 <li><strong>Price Per Hour: </strong> ${{space.price.0.value}}</li>
                 <li>Capacity: {{space.number_guests}}</li>
-                <li>Neighborhood: <span class="high"><a id="neighborhood">{{space.neighborhood}}</a></span></li>
+                <li>Neighborhood: <span class="high"><a onclick="ga('send', 'event', 'Browse', 'click', 'featured-left-right-arrows'); id="neighborhood">{{space.neighborhood}}</a></span></li>
             </ul>
             <div class="small-box">
-                <button onclick="window.location='http://deeplink.me/http://www.peerspace.com';" class="btn-space">Book Now</button>
-                <button onclick="window.location='http://deeplink.me/http://www.peerspace.com';"  class="btn-space">Message Host</button>
+                <button onclick="ga('send', 'event', 'Guest Interest', 'click', 'book-now-button');window.location='http://deeplink.me/http://www.peerspace.com';" class="btn-space">Book Now</button>
+                <button onclick="ga('send', 'event', 'Guest Interest', 'click', 'message-host-button');window.location='http://deeplink.me/http://www.peerspace.com';"  class="btn-space">Message Host</button>
             </div>
 
             <div class="clearfix"></div>
