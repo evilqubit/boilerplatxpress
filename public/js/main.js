@@ -98,6 +98,7 @@ jQuery(document).ready(function($){
             });
             infoBox(map, marker, data);
         }
+        
         /*
         function setMarkers(center, radius, map) {
             var json = (function () {
