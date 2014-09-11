@@ -1,9 +1,9 @@
 var request = require('request');
 var path = require('path');
-var host = 'http://localhost:3000/';
+var host = 'http://localhost:3000';
 
 var addSpace = function(space, callback){
-    request.post(host+'api/v1/spaces', function(err, resp, body){
+    request.post(host+'/api/spaces', function(err, resp, body){
         if (!err && resp.statusCode == 200){
             body = JSON.parse(body);
             console.log("Adding new space with id: " + body._id);

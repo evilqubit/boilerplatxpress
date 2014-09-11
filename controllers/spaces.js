@@ -5,6 +5,39 @@ var publicSpaces = path.resolve(__dirname + "/../" + "public/spaces/");
 var Space = mongoose.model('Space');
 var winston = require('winston');
 
+
+var deepLink=function(neighborhood,title,space_use,_id){
+    var loc = neighborhood.split(",").reverse()
+//loc = loc.reverse()
+    var state=loc[1]
+        state=state.toLowerCase().trim();
+    var city=loc[2];
+        city=city.toLowerCase().trim();
+        city=city.replace(/\s/g,'-')
+    var neigh=loc[3]
+        neigh=neigh.toLowerCase().trim();
+        neigh=neigh.replace(/\s/g,'-')
+    var title=title.toLowerCase().trim()
+        title=title.replace(/\s/g,'-')
+    var space_use=space_use.toLowerCase().trim()
+        space_use=space_use.replace(/\s/g,'-')
+    var id=_id
+    var url=state+' '+ city +' '+neigh+' '+title+' '+space_use+' '+id
+    var url=url.replace(/\s/g,'_')
+
+
+    return url
+}
+
+
+
+
+
+
+
+
+
+
 exports.create = function(req, res){
     var space = new Space(req.body);
     space.save(function(err){
@@ -61,6 +94,8 @@ exports.singleReadLongURI = function(req, res){
 
       else{
           if(typeof space[0] !== 'undefined'){
+                    space[0].url=deepLink(space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
+                    space[0].url='http://deeplink.me/'+ req.headers.host + '/' + space[0].url
                     return renderSpace(res,{space:space[0]});
           }
           else {

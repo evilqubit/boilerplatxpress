@@ -538,3 +538,130 @@
 {"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T15:00:46.445Z"}
 {"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T15:01:48.180Z"}
 {"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T15:01:48.920Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T21:41:37.677Z"}
+{"level":"info","message":"ADD SPACE #ff339018e82011e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.234Z"}
+{"level":"info","message":"ADD SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.237Z"}
+{"level":"info","message":"ADD SPACE #cd2926119db111e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.239Z"}
+{"level":"info","message":"ADD SPACE #5ff93da69dbb11e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.241Z"}
+{"level":"info","message":"ADD SPACE #94ab3cb49dc811e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.249Z"}
+{"level":"info","message":"ADD SPACE #907c994eb5e311e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.356Z"}
+{"level":"info","message":"ADD SPACE #ca9b3212c99911e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.359Z"}
+{"level":"info","message":"ADD SPACE #fb0f562cabd711e39ea0064910be75d3","timestamp":"2014-09-11T21:43:32.363Z"}
+{"level":"info","message":"ADD SPACE #fe1d66a09db011e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.365Z"}
+{"level":"info","message":"ADD SPACE #41e8ea5ebb6711e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.367Z"}
+{"level":"info","message":"ADD SPACE #6b3f4188dad211e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.405Z"}
+{"level":"info","message":"ADD SPACE #3687c20ec99611e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.408Z"}
+{"level":"info","message":"ADD SPACE #b12d81f6c9a311e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.411Z"}
+{"level":"info","message":"ADD SPACE #021e4112b6a311e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.415Z"}
+{"level":"info","message":"ADD SPACE #6df676f6c10911e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.419Z"}
+{"level":"info","message":"ADD SPACE #c169a81aea7711e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.469Z"}
+{"level":"info","message":"ADD SPACE #ddfe031d9a5811e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.471Z"}
+{"level":"info","message":"ADD SPACE #a63a9b92c9a211e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.477Z"}
+{"level":"info","message":"ADD SPACE #8ef3e68ac99a11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.482Z"}
+{"level":"info","message":"ADD SPACE #7ed46637b91c11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.490Z"}
+{"level":"info","message":"ADD SPACE #0e864dbcbc2f11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.518Z"}
+{"level":"info","message":"ADD SPACE #e6611cdb9a5811e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.524Z"}
+{"level":"info","message":"ADD SPACE #d2f6db14f00911e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.527Z"}
+{"level":"info","message":"ADD SPACE #23d30e1ceffc11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.530Z"}
+{"level":"info","message":"ADD SPACE #c8ceba2ceff911e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.533Z"}
+{"level":"info","message":"ADD SPACE #05aa16dfedd811e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.586Z"}
+{"level":"info","message":"ADD SPACE #ca8ca9aa9daa11e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.590Z"}
+{"level":"info","message":"ADD SPACE #78cbf83db46b11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.592Z"}
+{"level":"info","message":"ADD SPACE #41297d95c99e11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.595Z"}
+{"level":"info","message":"ADD SPACE #a4cbecd2c10f11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.598Z"}
+{"level":"info","message":"ADD SPACE #9be74002b5f111e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.628Z"}
+{"level":"info","message":"ADD SPACE #dd7b30afc10611e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.635Z"}
+{"level":"info","message":"ADD SPACE #cf1fd5949db211e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.637Z"}
+{"level":"info","message":"ADD SPACE #adb4e76cc99711e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.638Z"}
+{"level":"info","message":"ADD SPACE #952e30c7d31a11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.639Z"}
+{"level":"info","message":"ADD SPACE #433a33d9c9a011e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.669Z"}
+{"level":"info","message":"ADD SPACE #e56740629dcf11e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.671Z"}
+{"level":"info","message":"ADD SPACE #69abc84babc311e39ea0064910be75d3","timestamp":"2014-09-11T21:43:32.674Z"}
+{"level":"info","message":"ADD SPACE #80a580d7af7611e39ea0064910be75d3","timestamp":"2014-09-11T21:43:32.676Z"}
+{"level":"info","message":"ADD SPACE #8fd1fbb79dda11e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.677Z"}
+{"level":"info","message":"ADD SPACE #5390bab8b6c911e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.696Z"}
+{"level":"info","message":"ADD SPACE #23525bf1c9a111e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.698Z"}
+{"level":"info","message":"ADD SPACE #df92ab22a27811e39ea0064910be75d3","timestamp":"2014-09-11T21:43:32.700Z"}
+{"level":"info","message":"ADD SPACE #683253359ddc11e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.702Z"}
+{"level":"info","message":"ADD SPACE #7730e007ea7d11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.703Z"}
+{"level":"info","message":"ADD SPACE #86c222719ddb11e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.732Z"}
+{"level":"info","message":"ADD SPACE #9c8f0ace9ddf11e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.734Z"}
+{"level":"info","message":"ADD SPACE #28c60ee4a27d11e39ea0064910be75d3","timestamp":"2014-09-11T21:43:32.737Z"}
+{"level":"info","message":"ADD SPACE #ec3f5073c99b11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.740Z"}
+{"level":"info","message":"ADD SPACE #0fce8fe2c10511e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.741Z"}
+{"level":"info","message":"ADD SPACE #b2db24bfc02f11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.769Z"}
+{"level":"info","message":"ADD SPACE #14603f27b60111e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.771Z"}
+{"level":"info","message":"ADD SPACE #7c06d9a7a27411e39ea0064910be75d3","timestamp":"2014-09-11T21:43:32.773Z"}
+{"level":"info","message":"ADD SPACE #96f78b7aa0d511e39ea0064910be75d3","timestamp":"2014-09-11T21:43:32.775Z"}
+{"level":"info","message":"ADD SPACE #0e21160ea0da11e39ea0064910be75d3","timestamp":"2014-09-11T21:43:32.777Z"}
+{"level":"info","message":"ADD SPACE #e7caa284a0d711e39ea0064910be75d3","timestamp":"2014-09-11T21:43:32.806Z"}
+{"level":"info","message":"ADD SPACE #f00983cdc10311e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.808Z"}
+{"level":"info","message":"ADD SPACE #8994f2b9c10411e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.811Z"}
+{"level":"info","message":"ADD SPACE #f72f71c69dd911e3a77e064cf8c38b5b","timestamp":"2014-09-11T21:43:32.813Z"}
+{"level":"info","message":"ADD SPACE #600601c3c10d11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.815Z"}
+{"level":"info","message":"ADD SPACE #fd6bcdf3c10e11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.842Z"}
+{"level":"info","message":"ADD SPACE #2c6aa588c99911e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.844Z"}
+{"level":"info","message":"ADD SPACE #4da84b80c99411e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.845Z"}
+{"level":"info","message":"ADD SPACE #6f6ffd76c99d11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.846Z"}
+{"level":"info","message":"ADD SPACE #d3f1b486241811e4882106f116f37bf8","timestamp":"2014-09-11T21:43:32.848Z"}
+{"level":"info","message":"ADD SPACE #b16c2528085911e49d1d064910be75d3","timestamp":"2014-09-11T21:43:32.877Z"}
+{"level":"info","message":"ADD SPACE #e903b60806eb11e49d1d064910be75d3","timestamp":"2014-09-11T21:43:32.878Z"}
+{"level":"info","message":"ADD SPACE #9a3f1c58ef5811e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.880Z"}
+{"level":"info","message":"ADD SPACE #2ffba06cfbe911e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.881Z"}
+{"level":"info","message":"ADD SPACE #0081e6c324da11e4882106f116f37bf8","timestamp":"2014-09-11T21:43:32.883Z"}
+{"level":"info","message":"ADD SPACE #c98136c1f1bb11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.904Z"}
+{"level":"info","message":"ADD SPACE #e0a51464f0f411e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.906Z"}
+{"level":"info","message":"ADD SPACE #e9043f37174a11e49d1d064910be75d3","timestamp":"2014-09-11T21:43:32.908Z"}
+{"level":"info","message":"ADD SPACE #d3c468de0d0e11e49d1d064910be75d3","timestamp":"2014-09-11T21:43:32.910Z"}
+{"level":"info","message":"ADD SPACE #fddc88940b8011e49d1d064910be75d3","timestamp":"2014-09-11T21:43:32.912Z"}
+{"level":"info","message":"ADD SPACE #75bc17c10dd511e49d1d064910be75d3","timestamp":"2014-09-11T21:43:32.929Z"}
+{"level":"info","message":"ADD SPACE #981a997a10fb11e49d1d064910be75d3","timestamp":"2014-09-11T21:43:32.930Z"}
+{"level":"info","message":"ADD SPACE #5eec006cfb6c11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.932Z"}
+{"level":"info","message":"ADD SPACE #0cf0a481fb0211e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.934Z"}
+{"level":"info","message":"ADD SPACE #0cb7660ffbce11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.936Z"}
+{"level":"info","message":"ADD SPACE #257e7693faff11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.961Z"}
+{"level":"info","message":"ADD SPACE #45e257cefbd511e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.964Z"}
+{"level":"info","message":"ADD SPACE #6168f249fcbf11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.965Z"}
+{"level":"info","message":"ADD SPACE #2d383a691cee11e49d1d064910be75d3","timestamp":"2014-09-11T21:43:32.967Z"}
+{"level":"info","message":"ADD SPACE #1a10e70e1ced11e49d1d064910be75d3","timestamp":"2014-09-11T21:43:32.968Z"}
+{"level":"info","message":"ADD SPACE #eafdad3dfcc311e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.993Z"}
+{"level":"info","message":"ADD SPACE #4f1498c0fcc511e39d1d064910be75d3","timestamp":"2014-09-11T21:43:32.997Z"}
+{"level":"info","message":"ADD SPACE #19976c79fcc811e39d1d064910be75d3","timestamp":"2014-09-11T21:43:33.000Z"}
+{"level":"info","message":"ADD SPACE #90cacf2a02d711e49d1d064910be75d3","timestamp":"2014-09-11T21:43:33.002Z"}
+{"level":"info","message":"ADD SPACE #41cc89fafd6411e39d1d064910be75d3","timestamp":"2014-09-11T21:43:33.003Z"}
+{"level":"info","message":"ADD SPACE #7bbf6d2cf27f11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:33.028Z"}
+{"level":"info","message":"ADD SPACE #dea19bebf28e11e39d1d064910be75d3","timestamp":"2014-09-11T21:43:33.031Z"}
+{"level":"info","message":"ADD SPACE #f4c4f03cf50711e39d1d064910be75d3","timestamp":"2014-09-11T21:43:33.033Z"}
+{"level":"info","message":"ADD SPACE #2c60430df31811e39d1d064910be75d3","timestamp":"2014-09-11T21:43:33.034Z"}
+{"level":"info","message":"ADD SPACE #26c9cdc8fb2111e39d1d064910be75d3","timestamp":"2014-09-11T21:43:33.035Z"}
+{"level":"info","message":"ADD SPACE #8a532de1085f11e49d1d064910be75d3","timestamp":"2014-09-11T21:43:33.068Z"}
+{"level":"info","message":"ADD SPACE #9b833e63060311e49d1d064910be75d3","timestamp":"2014-09-11T21:43:33.070Z"}
+{"level":"info","message":"ADD SPACE #335e5858062011e49d1d064910be75d3","timestamp":"2014-09-11T21:43:33.073Z"}
+{"level":"info","message":"ADD SPACE #daf83eb005fe11e49d1d064910be75d3","timestamp":"2014-09-11T21:43:33.078Z"}
+{"level":"info","message":"ADD SPACE #91511f1f017b11e49d1d064910be75d3","timestamp":"2014-09-11T21:43:33.080Z"}
+{"level":"info","message":"ADD SPACE #0ac17bfdfd8611e39d1d064910be75d3","timestamp":"2014-09-11T21:43:33.096Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T22:17:24.022Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T22:25:35.937Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:25:42.388Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T22:27:21.693Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:27:25.593Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T22:34:25.438Z"}
+{"name":"MongoError","err":"E11000 duplicate key error index: peerspace.spaces.$_id_  dup key: { : \"ff339018e82011e39d1d064910be75d3\" }","code":11000,"n":0,"connectionId":21,"ok":1,"level":"error","message":"","timestamp":"2014-09-11T22:35:01.674Z"}
+{"name":"MongoError","err":"E11000 duplicate key error index: peerspace.spaces.$_id_  dup key: { : \"5ff93da69dbb11e3a77e064cf8c38b5b\" }","code":11000,"n":0,"connectionId":24,"ok":1,"level":"error","message":"","timestamp":"2014-09-11T22:35:01.675Z"}
+{"name":"MongoError","err":"E11000 duplicate key error index: peerspace.spaces.$_id_  dup key: { : \"94ab3cb49dc811e3a77e064cf8c38b5b\" }","code":11000,"n":0,"connectionId":25,"ok":1,"level":"error","message":"","timestamp":"2014-09-11T22:35:01.676Z"}
+{"name":"MongoError","err":"E11000 duplicate key error index: peerspace.spaces.$_id_  dup key: { : \"cd2926119db111e3a77e064cf8c38b5b\" }","code":11000,"n":0,"connectionId":22,"ok":1,"level":"error","message":"","timestamp":"2014-09-11T22:35:01.676Z"}
+{"name":"MongoError","err":"E11000 duplicate key error index: peerspace.spaces.$_id_  dup key: { : \"c4f410dfc9a111e39d1d064910be75d3\" }","code":11000,"n":0,"connectionId":23,"ok":1,"level":"error","message":"","timestamp":"2014-09-11T22:35:01.677Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:35:14.429Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T22:39:47.901Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:39:50.954Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T22:41:19.350Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:41:22.970Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T22:52:35.822Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:52:46.958Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:53:26.341Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:54:59.552Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:55:25.481Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T22:55:27.161Z"}
+{"level":"info","message":"PeerSpace API on port 3000","timestamp":"2014-09-11T23:04:46.031Z"}
+{"level":"info","message":"CACHING SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T23:04:59.651Z"}
+{"level":"info","message":"GET CACHE SPACE #c4f410dfc9a111e39d1d064910be75d3","timestamp":"2014-09-11T23:05:11.022Z"}

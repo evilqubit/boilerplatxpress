@@ -21,7 +21,7 @@
             document.createElement('aside');
             document.createElement('footer');
         </script><![endif]-->
-    
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
 
         <title>{{space.title}} | PeerSpace</title>
         <meta name="description" content="{{space.features}}">
