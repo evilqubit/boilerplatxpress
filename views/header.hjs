@@ -21,10 +21,14 @@
             document.createElement('aside');
             document.createElement('footer');
         </script><![endif]-->
-        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    
+
         <title>{{space.title}} | PeerSpace</title>
         <meta name="description" content="{{space.features}}">
+        <meta name="p:domain_verify" content="f9060b90ad1dce6179f81810834e5a69" />
+        <meta name="google-site-verification"content="3ULXPi0u9orsMFh2dMN1hHOX-rV34I0N7kN14s1jFVw" />
         <link rel="canonical" href="http://www.peerspace.com/spaces/">
+        <meta property="fb:app_id" content="359942150816062" />
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="article">
         <meta property="og:title" content="{{space.title}} | PeerSpace">
@@ -35,7 +39,7 @@
         <script type="text/javascript" src="http://dspf1ihg1rkbp.cloudfront.net/wp-includes/js/jquery/jquery.js"></script>
         <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.peerspace.com/xmlrpc.php?rsd">
         <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dspf1ihg1rkbp.cloudfront.net/wp-includes/wlwmanifest.xml">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
         <link rel="stylesheet" type="text/css" href="https://www.peerspace.com/wp-content/cache/minify/000000/hcpBCoAwDAXRC1miJ5LYhvqhtqEJFG8vqGtdzvAWshbBJRySwGEgZfH3rU9NM6lIN-UorEqFa0LNylkomtHWmpt31i9ofhb5BTDHF9oxbncB.css" media="all">
         <link rel="stylesheet" href="/spaces/css/ps-listing.min.css" charset="utf-8"/>
 
