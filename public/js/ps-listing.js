@@ -1245,9 +1245,17 @@
 
             var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
-            setMarkers(center, radius, map);
+            var image = host+'/spaces/images/map_pin.png';
+            var data = {'latitude':latitude,'longitude':longitude}
+            latLng = new google.maps.LatLng(data.latitude, data.longitude);
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                icon: image
+            });
+            infoBox(map, marker, data);
         }
-
+        /*
         function setMarkers(center, radius, map) {
             var json = (function () {
                 $.ajax({
@@ -1288,7 +1296,7 @@
 
             }
         }
-
+*/
         function infoBox(map, marker, data) {
             var infoWindow = new google.maps.InfoWindow();
             // Attaching a click event to the current marker
