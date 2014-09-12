@@ -1,6 +1,6 @@
 var request = require('request');
 var path = require('path');
-var host = 'http://localhost:3000';
+var host = 'http://peerspace.com/spaces';
 
 var addSpace = function(space, callback){
     request.post(host+'/api/spaces', function(err, resp, body){
