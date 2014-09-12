@@ -40,6 +40,7 @@ var deepLink=function(neighborhood,title,space_use,_id){
 
 exports.create = function(req, res){
     var space = new Space(req.body);
+
     space.save(function(err){
         if(err) winston.error(err);
         else {

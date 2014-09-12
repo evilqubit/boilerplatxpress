@@ -18,7 +18,7 @@ if (app_env === 'prod')
     winston.add(winston.transports.File, { filename: '/home/webdev/psAPI/SpacesAPI/logs/logfile.log' });
 else
     winston.add(winston.transports.File, { filename: 'logs/logfile.log' });
-    
+
 winston.remove(winston.transports.Console);
 
 var app = express();
@@ -28,7 +28,7 @@ if (app_env === 'prod')  {
 } else {
    module.exports.agent_enabled = false;
  }
-                        
+
 
 var env = app_env || 'dev'
 var config = require('./config/config')[env]
