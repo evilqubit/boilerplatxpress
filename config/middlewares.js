@@ -11,8 +11,8 @@ exports.restrictToIP = function(req, res, next) {
         }
         var ip_arr = ip.split(".");
         if(ip_arr[0] == '108' && ip_arr[1] == '168') next();
-        else {
-                winston.error("RESTRICTED SEARCH fROM: " + ip);
+        else { console.log(aaaaaaaaaaaaaaaaaaaaaa)
+                //winston.error("RESTRICTED SEARCH fROM: " + ip);
                 return res.redirect("http://www.peerspace.com/4.04.4004");
         }
 

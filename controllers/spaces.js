@@ -42,8 +42,7 @@ exports.create = function(req, res){
     var space = new Space(req.body);
 
     space.save(function(err){
-        if(err) console.log(err)
-// winston.error(err);
+        if(err) winston.error(err);
         else {
             winston.info("ADD SPACE #" + space.id);
             return res.send(space);
