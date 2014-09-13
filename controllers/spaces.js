@@ -6,6 +6,7 @@ var Space = mongoose.model('Space');
 var winston = require('winston');
 
 
+
 var deepLink=function(neighborhood,title,space_use,_id){
     var loc = neighborhood.split(",").reverse()
 //loc = loc.reverse()
@@ -33,7 +34,41 @@ var deepLink=function(neighborhood,title,space_use,_id){
 
 
 
+var deepLinkNew=function(state,city,neighborhood,title,space_use,_id){
 
+
+    //var loc = neighborhood.split(",").reverse()
+//loc = loc.reverse()
+    //var state=loc[1]
+    var state=state.toLowerCase().trim();
+    //var city=loc[2];
+    var city=city.toLowerCase().trim();
+        city=city.replace(/\s/g,'-')
+    //var neigh=loc[3]
+    var neigh=neighborhood.toLowerCase().trim();
+        neigh=neigh.replace(/\s/g,'-')
+    var title=title.toLowerCase().trim()
+        title=title.replace(/\s/g,'-')
+    var space_use=space_use.toLowerCase().trim()
+        space_use=space_use.replace(/\s/g,'-')
+    var id=_id
+
+    var url= (typeof state !== "undefined" ? state :"")
+            +(typeof city !== "undefined" ?  " "+city :"")
+            +(typeof neigh !== "undefined" ?  " "+neigh :"")
+            +(typeof title !== "undefined" ?  " "+title :"")
+            +(typeof space_use !== "undefined" ?  " "+space_use :"")
+            +(typeof id !== "undefined" ?  " "+id :"")
+
+
+
+
+
+    var url=url.replace(/\s/g,'_')
+
+
+    return url
+}
 
 
 
@@ -95,7 +130,13 @@ exports.singleReadLongURI = function(req, res){
 
       else{
           if(typeof space[0] !== 'undefined'){
-                    space[0].url=deepLink(space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
+               if (typeof space[0].city === 'undefined') {
+space[0].url=deepLink(space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
+               } else {
+
+                    space[0].url=deepLinkNew(space[0].state,space[0].city,space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
+
+                      }
 
                     space[0].url='http://deeplink.me/'+'peerspace.com/spaces/' + space[0].url
                     return renderSpace(res,{space:space[0]});

@@ -5,6 +5,8 @@ var Schema = mongoose.Schema;
 var spaceSchema = new Schema({
   _id: {type: Schema.Types.Mixed, index: true},
   title:  {type: String, unique: true},
+  state: String,
+  city: String,
   neighborhood: String,
   duration: Number,
   features: String,
