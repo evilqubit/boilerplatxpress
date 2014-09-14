@@ -131,12 +131,13 @@ exports.singleReadLongURI = function(req, res){
       else{
           if(typeof space[0] !== 'undefined'){
                if (typeof space[0].city === 'undefined') {
-space[0].url=deepLink(space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
-               } else {
+                      space[0].url=deepLink(space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
+                            }
+                              else
+                                    {
+                                        space[0].url=deepLinkNew(space[0].state,space[0].city,space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
 
-                    space[0].url=deepLinkNew(space[0].state,space[0].city,space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
-
-                      }
+                                                  }
 
                     space[0].url='http://deeplink.me/'+'peerspace.com/spaces/' + space[0].url
                     return renderSpace(res,{space:space[0]});
