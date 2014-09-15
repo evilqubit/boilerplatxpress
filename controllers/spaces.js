@@ -4,16 +4,6 @@ var path = require('path');
 var publicSpaces = path.resolve(__dirname + "/../" + "public/spaces/");
 var Space = mongoose.model('Space');
 var winston = require('winston');
-var BitlyAPI = require("node-bitlyapi");
-
-var Bitly = new BitlyAPI({
-    client_id: "f3f5491313310d5095f2b5f1cadb7a2ad2359c25",
-    client_secret: "b07671a63a850427d07d8162bd64a6330130aeba"
-});
-
-//Config Bitly
-Bitly.setAccessToken('3bc7420efd200dd10d6e25698bd8d02b7e2189c7');
-
 
 var deepLink=function(neighborhood,title,space_use,_id){
     var loc = neighborhood.split(",").reverse()
@@ -235,7 +225,6 @@ exports.singleRead = function(req, res){
                 }
             });
         }
-
         exports.geo = function(req, res){
             var skip = req.query.skip || 0;
             var limit = req.query.limit || 200;
