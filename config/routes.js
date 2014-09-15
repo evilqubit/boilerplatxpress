@@ -11,9 +11,7 @@ module.exports = function(app){
     //app.delete('/api/spaces/:id',spaces.delete);
 
     app.get('/all',mid.restrictToIP,spaces.readAll);
-    app.get('/search',mid.restrictToIP,mid.bitlyURL,function(req, res){
-        
-    });
+    app.get('/search',mid.restrictToIP,mid.bitlyURL,spaces.search);
     app.get('/b/search',mid.restrictToIP,spaces.search);
     app.get('/:uuid',spaces.singleReadLongURI);
     app.get('/api/geo',spaces.geo);
