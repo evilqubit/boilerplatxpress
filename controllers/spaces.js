@@ -24,9 +24,7 @@ var deepLink=function(neighborhood,title,space_use,_id){
     var url=state+' '+ city +' '+neigh+' '+title+' '+space_use+' '+id
     var url=url.replace(/\s/g,'_')
 
-    Bitly.shorten({longUrl:url}, function(err, results) {
-        return results;
-    });
+    return url;
 }
 
 
@@ -60,9 +58,8 @@ var deepLinkNew=function(state,city,neighborhood,title,space_use,_id){
     +(typeof id !== "undefined" ?  " "+id :"")
 
     var url=url.replace(/\s/g,'_')
-    Bitly.shorten({longUrl:url}, function(err, results) {
-        return results;
-    });
+
+    return url;
 }
 
 
