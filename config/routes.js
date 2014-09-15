@@ -12,6 +12,7 @@ module.exports = function(app){
 
     app.get('/all',mid.restrictToIP,spaces.readAll);
     app.get('/search',mid.restrictToIP,mid.bitlyURL,spaces.search);
+    app.get('/search/b',mid.restrictToIP,spaces.search);
     app.get('/:uuid',spaces.singleReadLongURI);
     app.get('/api/geo',spaces.geo);
     app.post('/api/spaces',spaces.create);

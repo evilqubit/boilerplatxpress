@@ -26,7 +26,7 @@ exports.restrictToIP = function(req, res, next) {
 
 exports.bitlyURL = function(req,res,next){
     //var longURI = 'http://'+res.req.headers.host+res.req.url;
-    var longURI = 'http://www.peerspace.com/spaces/'+res.req.url;
+    var longURI = 'http://www.peerspace.com/spaces/b/'+res.req.url;
     bitly.shorten(longURI, function(err, response) {
       if (err) winston.error("SEARCH BITLY: " + short_url);
       else {
