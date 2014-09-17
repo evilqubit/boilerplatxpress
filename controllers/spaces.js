@@ -214,7 +214,7 @@ exports.singleRead = function(req, res){
             var skip = req.query.skip || 0;
             var limit = req.query.limit || 200;
             var regex = new RegExp(req.query.q, 'i');
-            return Space.find({title: regex},shortURL title,{ skip: skip, limit: limit }, function(err,q){
+            return Space.find({title: regex},shortURL,{ skip: skip, limit: limit }, function(err,q){
                 if(err) winston.error(err);
                 else{
                     winston.info("SEARCH TITLE: " + regex);
