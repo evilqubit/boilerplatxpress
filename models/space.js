@@ -74,6 +74,7 @@ spaceSchema.pre('save', function (next) {
     if (err) console.log(err);
     else {
           space.shortURL = response.data.url
+          console.log(space.shortURL);
           //res.redirect(short_url);
           next();
     }
