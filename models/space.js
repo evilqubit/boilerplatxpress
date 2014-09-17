@@ -69,12 +69,14 @@ var deepLinkNew=function(state,city,neighborhood,title,space_use,_id){
 spaceSchema.pre('save', function (next) {
   var space = this;
   var longURI = deepLinkNew(space.state,space.city,space.neighborhood,space.title,space.space_use[0].name,space._id);
-console.log(longURI);
+  longURI='http://deeplink.me/'+'peerspace.com/spaces/' + longURI
+
   bitly.shorten(longURI, function(err, response) {
     if (err) console.log(err);
     else {
-          space.shortURL = response.data.url
 
+          //check if response.data.url is valid #DD
+          space.shortURL = response.data.url
           //res.redirect(short_url);
           next();
     }
