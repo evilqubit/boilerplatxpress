@@ -68,7 +68,7 @@ var deepLinkNew=function(state,city,neighborhood,title,space_use,_id){
 
 spaceSchema.pre('save', function (next) {
   var space = this;
-  var longURI = deepLinkNew(space.state,space.city,space.neighborhood,space.title,space.space_use.name,space._id);
+  var longURI = deepLinkNew(space.state,space.city,space.neighborhood,space.title,space.space_use[0].name,space._id);
 
   bitly.shorten(longURI, function(err, response) {
     if (err) console.log(err);
