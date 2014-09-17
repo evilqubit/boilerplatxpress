@@ -32,6 +32,14 @@ var spaceSchema = new Schema({
   c_date: { type: Date, default: Date.now }
 });
 
+function trimTrailingChars(s, charToTrim)
+   {
+     var regExp = new RegExp(charToTrim + "+$");
+     var result = s.replace(regExp, "");
+
+     return result;
+   }
+
 
 
 var deepLinkNew=function(state,city,neighborhood,title,space_use,_id){
@@ -39,14 +47,22 @@ var deepLinkNew=function(state,city,neighborhood,title,space_use,_id){
 
     //var loc = neighborhood.split(",").reverse()
     //loc = loc.reverse()
-    //var state=loc[1]
+
     var state=state.toLowerCase().trim();
-    //var city=loc[2];
-    var city=city.toLowerCase().trim();
+    state=trimTrailingChars('state','/')
+    state=trimTrailingChars('state',',')
+
+    var city=city.toLowerCase().trim()
+    city=trimTrailingChars('city','/')
+    city=trimTrailingChars('city',',')
     city=city.replace(/\s/g,'-')
-    //var neigh=loc[3]
+
     var neigh=neighborhood.toLowerCase().trim();
+    neigh=trimTrailingChars('neigh','/')
+    neigh=trimTrailingChars('neigh',',')
     neigh=neigh.replace(/\s/g,'-')
+
+
     var title=title.toLowerCase().trim()
     title=title.replace(/\s/g,'-')
     var space_use=space_use.toLowerCase().trim()
