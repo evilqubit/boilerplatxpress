@@ -721,7 +721,7 @@
               slider.animating = false;
               slider.currentSlide = slider.animatingTo;
             }
-
+            
             // Unbind previous transitionEnd events and re-bind new transitionEnd event
             slider.container.unbind("webkitTransitionEnd transitionend");
             slider.container.bind("webkitTransitionEnd transitionend", function() {
@@ -1156,13 +1156,6 @@
   };
 })(jQuery);
 ;jQuery(document).ready(function($){
-    var mq = window.matchMedia('@media all and (max-width: 400px)');
-    if(mq.matches) {
-        alert("foo");
-    } else {
-
-
-    }
     var host = document.location.origin;
     var production = false;
     if(host == "http://www.peerspace.com"){
@@ -1255,6 +1248,7 @@
             });
             infoBox(map, marker, data);
         }
+
         /*
         function setMarkers(center, radius, map) {
             var json = (function () {
