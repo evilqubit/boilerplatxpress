@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Bitly = require('bitly');
-var bitly = new Bitly('o_2o6vdo5f18', 'R_3190110b3a874c79951e398b7d279b7a');
+var bitly = new Bitly('peerspaceteam', 'R_ea31219197694855addedd567c8576a2');
 
 var Schema = mongoose.Schema;
 
