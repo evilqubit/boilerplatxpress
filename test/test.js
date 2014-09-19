@@ -44,8 +44,8 @@ function delSingle(id, callback){
 console.log("PeerSpace Spaces Migration");
 console.log("*****************************\n");
 
-var spaces = require('./spacestest.json');
+var spaces = require('./spaces10.json');
 
-for (var i =0; i<4;i++){
+for (var i =0; i<10;i++){
     addSpace(spaces.spaces[i],function(data){})
 }
