@@ -4,9 +4,12 @@ jQuery(document).ready(function($){
     if(host == "http://www.peerspace.com"){
         production = true;
     }
+
     var name = $(".prf-name").html();
-    var abbr = name.match(/[a-zA-Z]+\s?\w/);
+    var abbr = name.match(/[a-zA-Z]+\s?\w/) || 'unkown';
     $(".prf-name").html(abbr[0]+".");
+
+
     //Nav-Bar pop over
     var landing_page = $('.new_landing_popover_menu');
     $(".container_fixed_landing .menu").on("mouseenter", function(event){
@@ -41,24 +44,31 @@ jQuery(document).ready(function($){
             1000
         );
     });
+    var max_num = $(".slider-container ul li").length;
+    if (max_num == 1){
+        $('.slider-container').css("visibility","visible");
+        $('ul.slides li').css('width','100%');
+        $('.slide-control-num').css("visibility","hidden");
+    }
+    else{
+        //Slider
+        $('.slider-container').flexslider({
+            animation: "fade",
+            prevText: "",
+            nextText: "",
+            itemWidth: "100%",
+            slideshow: true,
+            after: function(){
+                    $('.slider-container').css("visibility","visible");
 
-    //Slider
-    $('.slider-container').flexslider({
-        animation: "fade",
-        prevText: "",
-        nextText: "",
-        itemWidth: "100%",
-        slideshow: true,
-        after: function(){
-                $('.slider-container').css("visibility","visible");
-                var max_num = $(".slider-container ol li").length;
-                var active = $(".slider-container ol li .flex-active").html();
-                var current_active = $('.current-slide');
-                var max_slide = $('.max-slide');
-                current_active.html(active);
-                max_slide.html(max_num);
-        }
-    });
+                    var active = $(".slider-container ol li .flex-active").html();
+                    var current_active = $('.current-slide');
+                    var max_slide = $('.max-slide');
+                    current_active.html(active);
+                    max_slide.html(max_num);
+            }
+        });
+    }
 
     //Slider nav-control
     var max_num = $(".slider-container ol li").length;
