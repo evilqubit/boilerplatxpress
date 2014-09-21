@@ -2,9 +2,9 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         jsDir: 'public/js/',
-        jsDistDir: 'public/js/',
+        jsDistDir: 'public/js/dist/',
         cssDir: 'public/css/',
-        cssDistDir: 'public/css/',
+        cssDistDir: 'public/css/dist/',
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             js: {
