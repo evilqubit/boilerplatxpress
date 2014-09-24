@@ -4,6 +4,7 @@ var path = require('path');
 var publicSpaces = path.resolve(__dirname + "/../" + "public/spaces/");
 var Space = mongoose.model('Space');
 var winston = require('winston');
+var request = require('request');
 
 var deepLink=function(neighborhood,title,space_use,_id){
     var loc = neighborhood.split(",").reverse()
@@ -118,26 +119,41 @@ exports.singleReadLongURI = function(req, res){
     var id = uuid_arr[uuid_arr.length-1];
 
     Space.find({_id:id}, function(err, space){
-        if(err) winston.error(err);
-
-        else{
-            if(typeof space[0] !== 'undefined'){
-                if (typeof space[0].city === 'undefined') {
-                    space[0].url=deepLink(space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
-                } else {
-
-                    space[0].url=deepLinkNew(space[0].state,space[0].city,space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
-
-                }
-
-                space[0].url='http://deeplink.me/'+'peerspace.com/spaces/' + space[0].url
-                return renderSpace(res,{space:space[0]});
+        var u_id = space[0].owner.user_id;
+        request('https://dev01-api.peerspaceapp.com/api/v1/reviews/host/stars/'+u_id, function (error, response, body) {
+            if (!error && response.statusCode == 200) {
+                space[0].stars=JSON.parse(body).stars;
+                console.log(space[0].stars)
+                parseSpace()
             }
             else {
-                winston.error("CANT GET SPACE #" + id);
-                return res.redirect("http://www.peerspace.com/4.04.4004");
+                space[0].stars=0;
+                parseSpace()
+            }
+        })
+
+        function parseSpace(){
+            if(err) winston.error(err);
+            else{
+                if(typeof space[0] !== 'undefined'){
+                    if (typeof space[0].city === 'undefined') {
+                        space[0].url=deepLink(space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
+                    } else {
+
+                        space[0].url=deepLinkNew(space[0].state,space[0].city,space[0].neighborhood,space[0].title,space[0].space_use[0].name,space[0]._id);
+
+                    }
+
+                    space[0].url='http://deeplink.me/'+'peerspace.com/spaces/' + space[0].url
+                    return renderSpace(res,{space:space[0]});
+                }
+                else {
+                    winston.error("CANT GET SPACE #" + id);
+                    return res.redirect("http://www.peerspace.com/4.04.4004");
+                }
             }
         }
+
     })
 };
 

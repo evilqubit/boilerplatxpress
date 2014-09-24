@@ -49,12 +49,12 @@
         <p class="prf-title">About the Host</p>
         <img src="{{space.owner.avatar_url}}" alt="" class="prf-image" />
         <h3 class="prf-name">{{space.owner.first_name}} {{space.owner.last_name}}</h3>
-        <ul class="prf-raiting">
+        <ul id="{{space.stars}}"class="prf-raiting">
             <li></li>
             <li></li>
             <li></li>
             <li></li>
-            <li class="off"></li>
+            <li></li>
         </ul>
         <p class="prf-bio">Position: {{space.owner.position}}</p>
     </div>

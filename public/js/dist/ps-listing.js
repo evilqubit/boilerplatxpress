@@ -1156,6 +1156,15 @@
   };
 })(jQuery);
 ;jQuery(document).ready(function($){
+    //Stars
+    var stars = $(".prf-raiting").attr('id');
+    $('ul.prf-raiting li').each(function(i){
+        if (stars <= i)
+            $(this).addClass('off');
+    })
+
+
+
     var host = document.location.origin;
     var production = false;
     if(host == "http://www.peerspace.com"){
