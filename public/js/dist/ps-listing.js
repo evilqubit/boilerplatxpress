@@ -6,6 +6,15 @@
 ;
 (function ($) {
 
+if($(window).width() <= 770) {
+
+    $(".slides img").each(function() {
+      $(this).attr("src", $(this).attr("src").replace("http://a4.res.cloudinary.com/peerspace-inc/image/upload/v1/dev_images/api/v1/images/", "http://a4.res.cloudinary.com/peerspace-inc/image/upload/w_640/v1/dev_images/api/v1/images/"));
+    });
+  }
+
+
+
   //FlexSlider: Object Instance
   $.flexslider = function(el, options) {
     var slider = $(el);
@@ -721,7 +730,7 @@
               slider.animating = false;
               slider.currentSlide = slider.animatingTo;
             }
-            
+
             // Unbind previous transitionEnd events and re-bind new transitionEnd event
             slider.container.unbind("webkitTransitionEnd transitionend");
             slider.container.bind("webkitTransitionEnd transitionend", function() {
