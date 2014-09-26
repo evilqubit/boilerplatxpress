@@ -45,6 +45,14 @@
         </div>
 
     </div>
+    <div class="user-aman box">
+        <p class="prf-title prf-ama"> Amenities</p>
+        <ul>
+        {{#space.amenities}}
+          <li>{{name}}</li>
+        {{/space.amenities}}
+        </ul>
+    </div>
     <div class="user-info box">
         <p class="prf-title">About the Host</p>
         <img src="{{space.owner.avatar_url}}" alt="" class="prf-image" />
@@ -57,14 +65,6 @@
             <li></li>
         </ul>
         <p class="prf-bio">Position: {{space.owner.position}}</p>
-    </div>
-    <div class="user-aman box">
-        <p class="prf-title prf-ama"> Amenities</p>
-        <ul>
-        {{#space.amenities}}
-          <li>{{name}}</li>
-        {{/space.amenities}}
-        </ul>
     </div>
     <div class="clearfix"></div>
 </div>
