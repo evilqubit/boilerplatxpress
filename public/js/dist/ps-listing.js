@@ -1349,6 +1349,8 @@ if($(window).width() <= 770) {
                 if(image.width <= image.height ){
                     var ratio = image.width/image.height;
                     $('<img style="margin-left:-'+ratio*400/2+'px;" class="small-img" src="'+image.src+'" />').appendTo(thisLi.find('a'));
+                    if (max_num == 1)
+                        $('ul.slides li a img.small-img').css('top','67px');
                     imageD.css({'-webkit-filter' : 'blur(5px)'
                                 ,'-webkit-transition': 'none'
                                 ,'transition': 'none'});
