@@ -364,6 +364,21 @@ ul.slides a:hover img, a:focus img
   transform: scale(3.2);
   -o-transform: scale(3.2);
 }
+ul.slides li a img.small-img{
+    width: auto;
+    height: 400px;
+    z-index: 99999;
+    -webkit-transform: none;
+    transform: none;
+    -o-transform: none;
+    margin: auto;
+    -webkit-transition: none;
+    transition: none;
+    -moz-transition: none;
+    position: absolute;
+    top: 67;
+    left: 50%;
+}
 
 .slider-container{
     height: auto;
