@@ -1351,6 +1351,8 @@ if($(window).width() <= 770) {
                     $('<img style="margin-left:-'+ratio*400/2+'px;" class="small-img" src="'+image.src+'" />').appendTo(thisLi.find('a'));
                     if (max_num == 1)
                         $('ul.slides li a img.small-img').css('top','67px');
+                    else
+                        $('ul.slides li a img.small-img').css('top','0');        
                     imageD.css({'-webkit-filter' : 'blur(5px)'
                                 ,'-webkit-transition': 'none'
                                 ,'transition': 'none'});
