@@ -376,7 +376,7 @@ ul.slides li a img.small-img{
     transition: none;
     -moz-transition: none;
     position: absolute;
-    top: 67;
+    top: 0;
     left: 50%;
 }
 
