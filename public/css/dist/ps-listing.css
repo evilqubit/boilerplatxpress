@@ -358,7 +358,7 @@ ul.slides img
   -moz-transition: all 2s ease-out;
 }
 
-ul.slides a:hover img, a:focus img
+ul.slides a:hover img.landscape, a:focus img.landscape
 {
   -webkit-transform: scale(3.2);
   transform: scale(3.2);
@@ -434,12 +434,12 @@ ul.slides li a img.small-img{
     list-style: none;
 }
 .slider-container .flex-prev {
-    background: url('../images/small_arrow_prev.png') no-repeat;
+    background: url('../../images/small_arrow_prev.png') no-repeat;
     left: -28px;
     background-size: 100% auto;
 }
 .slider-container .flex-next {
-    background: url('../images/small_arrow_next.png') no-repeat;
+    background: url('../../images/small_arrow_next.png') no-repeat;
     right: 0;
     background-size: 100% auto;
 }

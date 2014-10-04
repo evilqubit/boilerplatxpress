@@ -123,7 +123,7 @@ exports.singleReadLongURI = function(req, res){
         request('https://dev01-api.peerspaceapp.com/api/v1/reviews/host/stars/'+u_id, function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 space[0].stars=JSON.parse(body).stars;
-                console.log(space[0].stars)
+                //console.log(space[0].stars)
                 parseSpace()
             }
             else {

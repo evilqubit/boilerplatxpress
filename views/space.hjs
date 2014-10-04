@@ -10,7 +10,7 @@
             <!--<div class="shadow_overlay"></div>-->
             <ul class="slides">
                 {{#space.images}}
-                    <li><a href="#"><img src="{{.}}" alt="" /></a></li>
+                    <li><a href="#"><img class="landscape" src="{{.}}" alt="" /></a></li>
 
                 {{/space.images}}
             </ul>

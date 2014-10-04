@@ -1225,6 +1225,7 @@ if($(window).width() <= 770) {
         $('.slide-control-num').css("visibility","hidden");
     }
     else{
+        $('.slide-control-num').css("visibility","visible");
         //Slider
         $('.slider-container').flexslider({
             animation: "fade",
@@ -1347,6 +1348,7 @@ if($(window).width() <= 770) {
 
             image.onload = function(){
                 if(image.width <= image.height ){
+                    imageD.removeClass('landscape');
                     var ratio = image.width/image.height;
                     $('<img style="margin-left:-'+ratio*400/2+'px;" class="small-img" src="'+image.src+'" />').appendTo(thisLi.find('a'));
                     if (max_num == 0)
