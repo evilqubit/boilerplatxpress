@@ -15,7 +15,7 @@ var path = require('path');
 var mongoose = require('mongoose');
 var winston = require('winston');
 if (app_env === 'prod')
-    winston.add(winston.transports.File, { filename: '/home/webdev/psAPI/SpacesAPI/logs/logfile.log' });
+    winston.add(winston.transports.File, { filename: '/home/webdev/psAPI/ListingsAPI/logs/logfile.log' });
 else
     winston.add(winston.transports.File, { filename: 'logs/logfile.log' });
 
