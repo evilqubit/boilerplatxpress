@@ -12,7 +12,8 @@
     "winston": "~0.7.3",
     "newrelic": "~1.10.3",
     "hogan-express": "~0.5.2",
-    "bitly": "~1.2.5"
+    "bitly": "~1.2.5",
+    "underscore": "~1.7.0"
   },
   "devDependencies": {
     "grunt-contrib-concat": "~0.4.0",

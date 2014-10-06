@@ -1,6 +1,7 @@
 var request = require('request');
 var path = require('path');
 var host = 'http://localhost:3000';
+var _ = require('underscore');
 
 var addSpace = function(space, callback){
     request.post(host+'/api/spaces', function(err, resp, body){
@@ -9,7 +10,7 @@ var addSpace = function(space, callback){
             console.log("Adding new space with id: " + body._id);
             return callback(body);
         }
-        else  console.log(err);
+        else  return callback(err);
     }).form(space);
 
 }
@@ -44,8 +45,10 @@ function delSingle(id, callback){
 console.log("PeerSpace Spaces Migration");
 console.log("*****************************\n");
 
-var spaces = require('./spaces10.json');
+var spaces = require('./spaces.json');
 
-for (var i =0; i<10;i++){
-    addSpace(spaces.spaces[i],function(data){})
-}
+_.each(spaces.spaces, function(item, i){
+    addSpace(item,function(data){
+        console.log(data);
+    })
+});
