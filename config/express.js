@@ -2,7 +2,7 @@ var express = require('express');
 
 var app_env = process.env.NODE_ENV;
 /*New Relic*/
-if (app_env === 'prod') var newrelic = require ('newrelic');
+//if (app_env === 'prod') var newrelic = require ('newrelic');
 
 module.exports = function (app, config) {
 
