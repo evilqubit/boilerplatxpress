@@ -49,7 +49,7 @@
         <p class="prf-title prf-ama"> Amenities</p>
         <ul>
         {{#space.amenities}}
-          <li>{{name}}</li>
+          <li>{{name}}<span class='comma'>, </span></li>
         {{/space.amenities}}
         </ul>
     </div>

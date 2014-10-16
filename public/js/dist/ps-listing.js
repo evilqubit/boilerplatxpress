@@ -1173,6 +1173,9 @@ if($(window).width() <= 770) {
             $(this).addClass('off');
     })
 
+    //Remove Last comma
+    $('.comma').last().text('.');
+
     var host = document.location.origin;
     var production = false;
     if(host == "http://www.peerspace.com"){
