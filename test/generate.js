@@ -1,6 +1,6 @@
 var request = require('request');
 var path = require('path');
-var host = 'http://localhost:3000';
+var host = 'http://peerspace.com/spaces/';
 var _ = require('underscore');
 
 var generateAll = function(){
@@ -8,7 +8,7 @@ var generateAll = function(){
         _.each(JSON.parse(body), function(item, i){
             console.log(item._id);
             request.get(host+'/_'+item._id, function(err, resp, body){
-                console.log(body);
+                
             });
         });
 
