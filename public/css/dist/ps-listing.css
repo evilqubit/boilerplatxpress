@@ -400,7 +400,7 @@ ul.slides li a img.small-img{
     display: none;
 }
 .slider-container .flex-direction-nav {
-    width: 85px;
+    width: 108px;
     height: 30px;
     position: relative;
     display: block;
@@ -467,7 +467,7 @@ ul.slides li a img.small-img{
     color: #EEE;
     margin: 0 auto;
     margin-top: 0;
-    width: 80px;
+    width: 108px;
 }
 .main-container .space-info {
     width: 100%;

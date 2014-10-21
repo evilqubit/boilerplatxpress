@@ -10,7 +10,6 @@ var n = this,
  };
 
 jQuery(document).ready(function($){
-
     //Format Currency
     var ammount = $('.list-info li').first();
     var frmAmmount = ammount.text().split('$')[1];
