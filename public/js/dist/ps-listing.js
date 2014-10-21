@@ -1176,6 +1176,13 @@ var n = this,
  };
 
 jQuery(document).ready(function($){
+
+
+        $(".slides img").each(function() {
+          $(this).attr("src", $(this).attr("src").replace("http://a4.res.cloudinary.com/peerspace-inc/image/upload/", "http://a4.res.cloudinary.com/peerspace-inc/image/upload/w_640/"));
+        });
+
+
     //Format Currency
     var ammount = $('.list-info li').first();
     var frmAmmount = ammount.text().split('$')[1];
